@@ -92,7 +92,12 @@ public class EnemyGeneration : MonoBehaviour
                 randomX = (int)Mathf.Round(UnityEngine.Random.Range(0f, mapWidth - 1f));
                 randomY = (int)Mathf.Round(UnityEngine.Random.Range(0f, mapHeight - 1f));
             }
-            locationCheck[randomX, randomY] = true;
+            for (int j = 0; j < enemyWidth; j++) {
+                for (int k = 0; k < enemyHeight; k++) {
+                    locationCheck[(int)(randomX - enemyExtend.x + j), (int)(randomY - enemyExtend.y + k)] = true;
+                }
+            }
+
             UnityEngine.Object.Instantiate(enemy, new Vector3(randomX, randomY, 0) - mapExtend + mapCenter, Quaternion.identity);
         }
     }
