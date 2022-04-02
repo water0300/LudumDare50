@@ -80,7 +80,7 @@ public class EnemyGeneration : MonoBehaviour
 
     }
 
-    private void enemyCreation(int enemyNumber)
+    public void enemyCreation(int enemyNumber)
     {
         for (int i = 0; i < enemyNumber; i++)
         {
@@ -106,14 +106,19 @@ public class EnemyGeneration : MonoBehaviour
     {
         //player position shouldn't generate and player around within prevent size shouldn't generate
         var relativePlayerPosition = playerPosition - mapPosition + mapExtend;
-        for (int i = 0; i < playerWidth; i++) {
-            for (int j = 0; j < playerHeight; j++) {
+        for (int i = 0; i < playerWidth; i++)
+        {
+            for (int j = 0; j < playerHeight; j++)
+            {
                 var actualX = (int)(relativePlayerPosition.x - playerExtend.x + i);
                 var actualY = (int)(relativePlayerPosition.y - playerExtend.y + i);
                 locationCheck[actualX, actualY] = true;
-                for (int a = -preventGenerationBlockSize; a <= preventGenerationBlockSize; a++) {
-                    for (int b = -preventGenerationBlockSize; b <= preventGenerationBlockSize; b++) {
-                        locationCheck[actualX + a, actualY + b] = true;
+                for (int a = -preventGenerationBlockSize; a <= preventGenerationBlockSize; a++)
+                {
+                    for (int b = -preventGenerationBlockSize; b <= preventGenerationBlockSize; b++)
+                    {
+                        if (actualX + a < mapWidth && actualX + a >= 0 && actualY + b < mapHeight && actualY + b >= 0)
+                            locationCheck[actualX + a, actualY + b] = true;
                     }
                 }
             }
