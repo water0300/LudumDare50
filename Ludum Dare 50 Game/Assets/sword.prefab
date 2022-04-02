@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3353130312824687904}
   - component: {fileID: 6069582330990918102}
   - component: {fileID: -6266542407699648509}
+  - component: {fileID: -1222094459564633586}
   m_Layer: 0
   m_Name: sword
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3353130312824687906}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.19800001, y: 0.20199999, z: 1.8520261}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
@@ -131,3 +132,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.16}
   m_EdgeRadius: 0
+--- !u!114 &-1222094459564633586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3353130312824687906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28d4d63e3faa1e64ba11cb19480f79ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies:
+  - {fileID: 4927297541732849323, guid: bff1f74e33c889f4c9fb26c588cb0e34, type: 3}

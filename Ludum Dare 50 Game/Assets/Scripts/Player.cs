@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private int health = 3;
+    public int health = 3;
     public List<GameObject> enemies;
     public int damage;
 
@@ -24,9 +24,12 @@ public class Player : MonoBehaviour
     {
         foreach (GameObject enemy in enemies)
         {
-            if (collision.gameObject == enemy)
+            Debug.Log(enemy.name);
+            Debug.Log(collision.collider.gameObject.name);
+            if (collision.collider.gameObject.name.Contains(enemy.name))
             {
                 health--;
+                Debug.Log(health);
                 if (health == 0)
                 {
                     OnDeath();
@@ -37,6 +40,7 @@ public class Player : MonoBehaviour
 
     void OnDeath()
     {
+        Debug.Log("Game over");
         Application.Quit();
     }
 }
