@@ -11,6 +11,8 @@ public class EnemyGeneration : MonoBehaviour
 
     public GameObject map;
 
+    public List<GameObject> enemies;
+
     public int enemyNumber = 2;
 
     public int preventGenerationBlockSize = 1;
@@ -44,6 +46,8 @@ public class EnemyGeneration : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        enemies = new List<GameObject>();
+
         //Get bounds of tileMap
         var mapBounds = map.GetComponent<UnityEngine.Tilemaps.Tilemap>().localBounds;
         var mapSize = mapBounds.size;
@@ -98,8 +102,17 @@ public class EnemyGeneration : MonoBehaviour
                 }
             }
 
-            UnityEngine.Object.Instantiate(enemy, new Vector3(randomX, randomY, 0) - mapExtend + mapCenter, Quaternion.identity);
+            var temp = UnityEngine.Object.Instantiate(enemy, new Vector3(randomX, randomY, 0) - mapExtend + mapCenter, Quaternion.identity);
+            enemies.Add(temp);
         }
+    }
+
+    public void clearEnemies()
+    {
+        for (int i = 0; i < enemies.Count; i++) {
+            Destroy(enemies[i]);
+        }
+        enemies.Clear();
     }
 
     private void checkTableFormation()
