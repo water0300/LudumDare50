@@ -17,11 +17,15 @@ public class EnemyGeneration : MonoBehaviour
 
     public int preventGenerationBlockSize = 1;
 
+    public GameObject target;
+
+    public GameObject[] waypoints;
+
+    public float[] times;
+
     private float mapWidth;
 
     private float mapHeight;
-
-    private Vector3 mapPosition;
 
     private Vector3 mapExtend;
 
@@ -54,7 +58,6 @@ public class EnemyGeneration : MonoBehaviour
         //Initialize map information
         mapWidth = mapSize.x;
         mapHeight = mapSize.y;
-        mapPosition = map.transform.position;
         mapExtend = mapBounds.extents;
         mapCenter = mapBounds.center;
 
@@ -81,7 +84,7 @@ public class EnemyGeneration : MonoBehaviour
 
         //checkTable formation
         checkTableFormation();
-
+        enemyCreation(enemyNumber);
     }
 
     public void enemyCreation(int enemyNumber)
@@ -103,6 +106,14 @@ public class EnemyGeneration : MonoBehaviour
             }
 
             var temp = UnityEngine.Object.Instantiate(enemy, new Vector3(randomX, randomY, 0) - mapExtend + mapCenter, Quaternion.identity);
+
+            temp.GetComponent<EnemyAI>().targetObject = target;
+            
+            temp.GetComponent<EnemyAI>().patrolPath = waypoints;
+            
+            temp.GetComponent<EnemyAI>().patrolPathIdleTimes = times;
+
+
             enemies.Add(temp);
         }
     }
@@ -118,7 +129,7 @@ public class EnemyGeneration : MonoBehaviour
     private void checkTableFormation()
     {
         //player position shouldn't generate and player around within prevent size shouldn't generate
-        var relativePlayerPosition = playerPosition - mapPosition + mapExtend;
+        var relativePlayerPosition = playerPosition - mapCenter + mapExtend;
         for (int i = 0; i < playerWidth; i++)
         {
             for (int j = 0; j < playerHeight; j++)
@@ -158,10 +169,14 @@ public class EnemyGeneration : MonoBehaviour
                     locationCheck[i, j] = true;
                 }
                 //enemy circle boundray cases
-                if (distanceBetweenGivenPointInMap(mapCenter, mapExtend, xRight, yUp) > mapExtend.x ||
-                    distanceBetweenGivenPointInMap(mapCenter, mapExtend, xRight, yDown) > mapExtend.x ||
-                    distanceBetweenGivenPointInMap(mapCenter, mapExtend, xLeft, yUp) > mapExtend.x ||
-                    distanceBetweenGivenPointInMap(mapCenter, mapExtend, xLeft, yDown) > mapExtend.x) 
+                var circlecheker = Mathf.Abs(mapExtend.x);
+                if (Mathf.Abs(mapExtend.x) > Mathf.Abs(mapExtend.y)) {
+                    circlecheker = Mathf.Abs(mapExtend.y);
+                }
+                if (distanceBetweenGivenPointInMap(mapCenter, mapExtend, xRight, yUp) > circlecheker ||
+                    distanceBetweenGivenPointInMap(mapCenter, mapExtend, xRight, yDown) > circlecheker ||
+                    distanceBetweenGivenPointInMap(mapCenter, mapExtend, xLeft, yUp) > circlecheker ||
+                    distanceBetweenGivenPointInMap(mapCenter, mapExtend, xLeft, yDown) > circlecheker) 
                 {
                     locationCheck[i, j] = true;
                 }
