@@ -8,15 +8,15 @@ public class EnemyAI : MonoBehaviour
     public GameObject targetObject;
     public AIState aiState = AIState.Idle;
     // If target seen within pursueDistance, AI will start to pursue the target.
-    public float pursueDistance = 1500;
+    public float pursueDistance = 150;
     // If target is within attackDistance, AI will attempt to make an attack.
-    public float attackDistance = 1000;
+    public float attackDistance = 100;
     // View angle that AI can see in front of itself
     public float visionAngle = 360;
     // Speed that AI should move when patrolling
-    public float patrolSpeed = 1000;
+    public float patrolSpeed = 100;
     // Speed that AI should move when pursuing player
-    public float pursueSpeed = 2000;
+    public float pursueSpeed = 200;
     // Path of waypoints to patrol
     public GameObject[] patrolPath;
     // Time that AI should idle at each waypoint once reached
@@ -50,10 +50,13 @@ public class EnemyAI : MonoBehaviour
         rb = gameObject.GetComponent<Rigidbody>();
         // Creates a layermask that ignores the player and enemies.
         visMask = ~LayerMask.GetMask("Player", "Enemy");
+        this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, 0);
 
         agent.speed = patrolSpeed;
         agent.updateRotation = false;
         agent.updateUpAxis = false;
+        agent.acceleration = 9999f;
+        agent.angularSpeed = 9999f;
     }
 
     // Update is called once per frame
@@ -117,10 +120,9 @@ public class EnemyAI : MonoBehaviour
                 break;
 
         }
-        rb.velocity = agent.velocity;
         anim.SetFloat("forwardVel", Vector3.Magnitude(rb.velocity));
-        Debug.Log(rb.velocity);
-        Debug.Log(agent.speed);
+
+        this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, 0);
     }
 
     void OnTriggerEnter(Collider c)

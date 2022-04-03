@@ -107,6 +107,8 @@ public class EnemyGeneration : MonoBehaviour
 
             var temp = UnityEngine.Object.Instantiate(enemy, new Vector3(randomX, randomY, 0) - mapExtend + mapCenter, Quaternion.identity);
 
+            temp.transform.position = new Vector3(temp.transform.position.x, temp.transform.position.y, 0f);
+
             temp.GetComponent<EnemyAI>().targetObject = target;
             
             temp.GetComponent<EnemyAI>().patrolPath = waypoints;
