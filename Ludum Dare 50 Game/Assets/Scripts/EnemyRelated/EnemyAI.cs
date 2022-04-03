@@ -117,7 +117,10 @@ public class EnemyAI : MonoBehaviour
                 break;
 
         }
+        rb.velocity = agent.velocity;
         anim.SetFloat("forwardVel", Vector3.Magnitude(rb.velocity));
+        Debug.Log(rb.velocity);
+        Debug.Log(agent.speed);
     }
 
     void OnTriggerEnter(Collider c)
