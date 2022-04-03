@@ -21,10 +21,11 @@ public class EnemyAI : MonoBehaviour
     public GameObject[] patrolPath;
     // Time that AI should idle at each waypoint once reached
     public float[] patrolPathIdleTimes;
+    private int health = 2;
 
     private NavMeshAgent agent;
     private Animator anim;
-    private Rigidbody rb;
+    private Rigidbody2D rb;
     // Create a layer mask that ignores enemies and the player, may need to change if player hides behind an enemy
     private LayerMask visMask;
 
@@ -47,10 +48,10 @@ public class EnemyAI : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
-        rb = gameObject.GetComponent<Rigidbody>();
+        rb = gameObject.GetComponent<Rigidbody2D>();
         // Creates a layermask that ignores the player and enemies.
         visMask = ~LayerMask.GetMask("Player", "Enemy");
-        this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, 0);
+        this.transform.position = new Vector2(this.transform.position.x, this.transform.position.y);
 
         agent.speed = patrolSpeed;
         agent.updateRotation = false;
@@ -62,7 +63,21 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float targetDist = Mathf.Abs(Vector3.Magnitude(targetObject.transform.position - rb.position));
+        if (health == 0)
+        {
+            StopAllCoroutines();
+            Destroy(this.gameObject);
+        }
+
+        if (targetObject == null)
+        {
+            Debug.Log("GG");
+            StopAllCoroutines();
+            UnityEditor.EditorApplication.isPlaying = false;
+            Application.Quit(0);
+        }
+
+        float targetDist = Mathf.Abs(Vector2.SqrMagnitude(new Vector2(targetObject.transform.position.x, targetObject.transform.position.y) - rb.position));
 
         switch (aiState)
         {
@@ -120,9 +135,14 @@ public class EnemyAI : MonoBehaviour
                 break;
 
         }
-        anim.SetFloat("forwardVel", Vector3.Magnitude(rb.velocity));
+        anim.SetFloat("forwardVel", Vector2.SqrMagnitude(rb.velocity));
 
-        this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, 0);
+        this.transform.position = new Vector2(this.transform.position.x, this.transform.position.y);
+    }
+
+    public void DeductHealth(int dmg)
+    {
+        health -= dmg;
     }
 
     void OnTriggerEnter(Collider c)
@@ -139,10 +159,10 @@ public class EnemyAI : MonoBehaviour
     // Checks if AI can see RigidBody target object within the provided distance visDistance and angle visAngle
     private bool CanSee(float visDistance, float visAngle)
     {
-        Vector3 targetDir = targetObject.transform.position - rb.position;
+        Vector2 targetDir = new Vector2(targetObject.transform.position.x, targetObject.transform.position.y) - rb.position;
 
         float targetDist = Mathf.Abs(Vector3.Magnitude(targetDir));
-        float targetAngle = Vector3.Angle(transform.forward, Vector3.Normalize(targetDir));
+        float targetAngle = Vector2.Angle(transform.forward, Vector3.Normalize(targetDir));
 
 
 

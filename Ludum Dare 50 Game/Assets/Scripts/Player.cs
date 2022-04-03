@@ -16,7 +16,13 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (this.gameObject == null)
+        {
+            Debug.Log("Game over");
+            StopAllCoroutines();
+            UnityEditor.EditorApplication.isPlaying = false;
+            Application.Quit(0);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -39,7 +45,7 @@ public class Player : MonoBehaviour
 
     void OnDeath()
     {
-        Debug.Log("Game over");
-        Application.Quit();
+        StopAllCoroutines();
+        Destroy(this.gameObject);
     }
 }

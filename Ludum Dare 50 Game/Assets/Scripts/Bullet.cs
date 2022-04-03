@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public List<GameObject> enemies;
+    int damage = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +24,7 @@ public class Bullet : MonoBehaviour
         {
             if (collision.collider.gameObject.name.Contains(enemy.name))
             {
-                collision.collider.gameObject.GetComponent<Player>().health -= 1;
+                collision.collider.gameObject.GetComponent<EnemyAI>().DeductHealth(damage);
                 //Debug.Log(collision.collider.gameObject.GetComponent<Player>().health);
             }
         }
