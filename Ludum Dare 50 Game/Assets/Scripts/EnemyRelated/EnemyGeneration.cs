@@ -14,6 +14,12 @@ public class EnemyGeneration : MonoBehaviour
 
     public GameObject map;
 
+    public GameObject shop;
+
+    private List<Vector3Int> possiblePosition;
+
+    private bool[,] checkTable;
+
     public List<GameObject> enemies;
 
     public int enemyNumber = 2;
@@ -24,20 +30,6 @@ public class EnemyGeneration : MonoBehaviour
 
     public float[] times;
 
-    private float mapWidth;
-
-    private float mapHeight;
-
-    private Vector3 mapExtend;
-
-    private Vector3 mapCenter;
-
-    private float playerWidth;
-
-    private float playerHeight;
-
-    private Vector3 playerPosition;
-
     private Vector3 playerExtend;
 
     private float enemyWidth;
@@ -46,33 +38,30 @@ public class EnemyGeneration : MonoBehaviour
 
     private Vector3 enemyExtend;
 
-    private bool[,] locationCheck;
+    private UnityEngine.Tilemaps.Tilemap mapTilemap;
+
+    private UnityEngine.Tilemaps.Tilemap shopTilemap;
+
+    private Vector3 mapCenter;
+
+    private Vector3 mapExtent;
+
+    private List<Vector2Int> dynammicPositionRecord;
+
+    private bool start = true;
 
     // Start is called before the first frame update
     void Awake()
     {
         enemies = new List<GameObject>();
 
-        //Get bounds of tileMap
-        var mapBounds = map.GetComponent<UnityEngine.Tilemaps.Tilemap>().localBounds;
-        var mapSize = mapBounds.size;
-        //Initialize map information
-        mapWidth = mapSize.x;
-        mapHeight = mapSize.y;
-        mapExtend = mapBounds.extents;
-        mapCenter = mapBounds.center;
+        possiblePosition = new List<Vector3Int>();
 
-        //map array initialize
-        locationCheck = new bool[(int)mapWidth, (int)mapHeight];
-        System.Array.Clear(locationCheck, 0, (int)mapWidth * (int)mapHeight);
+        dynammicPositionRecord = new List<Vector2Int>();
 
         //Get bounds of palyer
         var playerBounds = player.GetComponent<SpriteRenderer>().bounds;
-        var playerSize = playerBounds.size;
         //Initialize palyer information
-        playerWidth = playerSize.x;
-        playerHeight = playerSize.y;
-        playerPosition = player.transform.position;
         playerExtend = playerBounds.extents;
 
         //Get bounds of enemy
@@ -83,36 +72,52 @@ public class EnemyGeneration : MonoBehaviour
         enemyHeight = enemySize.y;
         enemyExtend = enemyBounds.extents;
 
-        //checkTable formation
+
+        mapTilemap = map.GetComponent<UnityEngine.Tilemaps.Tilemap>();
+        shopTilemap = shop.GetComponent<UnityEngine.Tilemaps.Tilemap>();
+
+
+        mapCenter = mapTilemap.transform.position;
+        mapExtent = mapTilemap.size / 2;
+
         checkTableFormation();
-        enemyCreation(enemyNumber);
+
     }
 
     public void enemyCreation(int enemyNumber)
     {
         for (int i = 0; i < enemyNumber; i++)
         {
-            int randomX = (int)Mathf.Round(UnityEngine.Random.Range(0f, mapWidth - 1f));
-            int randomY = (int)Mathf.Round(UnityEngine.Random.Range(0f, mapHeight - 1f));
-
-            while (locationCheck[randomX, randomY])
+            int randomP = UnityEngine.Random.Range(0, possiblePosition.Count);
+            var position = possiblePosition[randomP];
+            var tablePosition = position + mapExtent - mapCenter;
+            while (checkTable[(int)tablePosition.x, (int)tablePosition.y])
             {
-                randomX = (int)Mathf.Round(UnityEngine.Random.Range(0f, mapWidth - 1f));
-                randomY = (int)Mathf.Round(UnityEngine.Random.Range(0f, mapHeight - 1f));
+                randomP = UnityEngine.Random.Range(0, possiblePosition.Count);
+                position = possiblePosition[randomP];
+                tablePosition = position + mapExtent - mapCenter;
             }
+            checkTable[(int)tablePosition.x, (int)tablePosition.y] = true;
+            dynammicPositionRecord.Add(new Vector2Int((int)tablePosition.x, (int)tablePosition.y));
             for (int j = 0; j < enemyWidth; j++) {
                 for (int k = 0; k < enemyHeight; k++) {
-                    locationCheck[(int)(randomX - enemyExtend.x + j), (int)(randomY - enemyExtend.y + k)] = true;
+                    var x = (int)(position.x - enemyExtend.x + j);
+                    var y = (int)(position.y - enemyExtend.y + k);
+                    Vector3 blockedTablePos = new Vector3(x, y, 0) + mapExtent + mapCenter;
+                    if (!checkTable[(int)blockedTablePos.x, (int)blockedTablePos.y]) {
+                        checkTable[(int)blockedTablePos.x, (int)blockedTablePos.y] = true;
+
+                        dynammicPositionRecord.Add(new Vector2Int((int)blockedTablePos.x, (int)blockedTablePos.y));
+                    }
                 }
             }
 
-            var temp = UnityEngine.Object.Instantiate(enemy, new Vector3(randomX, randomY, 0) - mapExtend + mapCenter, Quaternion.identity);
+            var temp = UnityEngine.Object.Instantiate(enemy, position, Quaternion.identity);
 
-            temp.transform.position = new Vector3(temp.transform.position.x, temp.transform.position.y, 0f);
 
             temp.GetComponent<EnemyAI>().targetObject = target;
 
-            temp.GetComponent<EnemyAI>().patrolPath = waypointsCreation(randomX, randomY); ;
+            temp.GetComponent<EnemyAI>().patrolPath = waypointsCreation(position);
             
             temp.GetComponent<EnemyAI>().patrolPathIdleTimes = times;
 
@@ -121,148 +126,181 @@ public class EnemyGeneration : MonoBehaviour
         }
     }
 
-    public GameObject[] waypointsCreation(int x, int y) {
+    public GameObject[] waypointsCreation(Vector3Int position) {
         var distance = UnityEngine.Random.Range(1, 3) * 20;
+        Vector3Int vertical = new Vector3Int(0, distance, 0);
+        Vector3Int horizontal = new Vector3Int(distance,0, 0);
+        var up = position + vertical;
+        var down = position - vertical;
+        var left = position + horizontal;
+        var right = position - horizontal;
         GameObject[] waypoints = new GameObject[2];
-        if (x + distance > mapWidth)
+        if (possiblePosition.Contains(up))
         {
-            distance = -distance;
-            if (x + distance < 0)
-            {
-                if (y + distance < 0)
-                {
-                    distance = -distance;
-                    if (y + distance > mapHeight)
-                    {
-                        waypointsCreation(x, y);
-                    }
-                    else {
-                        GameObject s = new GameObject("waypoint" + counts);
-                        counts++;
-                        s.transform.position = new Vector3(x, y + distance, 0) + mapCenter - mapExtend;
-                        waypoints[0] = s;
-
-                        GameObject t = new GameObject("waypoint" + counts);
-                        counts++;
-                        t.transform.position = new Vector3(x, y, 0) + mapCenter - mapExtend;
-                        waypoints[1] = t;
-                    }
-                }
-                else {
-                    GameObject s = new GameObject("waypoint" + counts);
-                    counts++;
-                    s.transform.position = new Vector3(x, y + distance, 0) + mapCenter - mapExtend;
-                    waypoints[0] = s;
-
-                    GameObject t = new GameObject("waypoint" + counts);
-                    counts++;
-                    t.transform.position = new Vector3(x, y, 0) + mapCenter - mapExtend;
-                    waypoints[1] = t;
-                }
-            }
-            else
-            {
-                GameObject s = new GameObject("waypoint" + counts);
-                counts++;
-                s.transform.position = new Vector3(x + distance, y, 0) + mapCenter - mapExtend;
-                waypoints[0] = s;
-
-                GameObject t = new GameObject("waypoint" + counts);
-                counts++;
-                t.transform.position = new Vector3(x, y, 0) + mapCenter - mapExtend;
-                waypoints[1] = t;
-            }
-        }
-        else
-        {
-
             GameObject s = new GameObject("waypoint" + counts);
             counts++;
-            s.transform.position = new Vector3(x + distance, y, 0) + mapCenter - mapExtend;
+            s.transform.position = up;
             waypoints[0] = s;
 
             GameObject t = new GameObject("waypoint" + counts);
             counts++;
-            t.transform.position = new Vector3(x, y, 0) + mapCenter - mapExtend;
+            t.transform.position = position;
             waypoints[1] = t;
-
         }
+        else {
+            if (possiblePosition.Contains(down))
+            {
+                GameObject s = new GameObject("waypoint" + counts);
+                counts++;
+                s.transform.position = down;
+                waypoints[0] = s;
+
+                GameObject t = new GameObject("waypoint" + counts);
+                counts++;
+                t.transform.position = position;
+                waypoints[1] = t;
+            }
+            else
+            {
+                if (possiblePosition.Contains(left))
+                {
+                    GameObject s = new GameObject("waypoint" + counts);
+                    counts++;
+                    s.transform.position = left;
+                    waypoints[0] = s;
+
+                    GameObject t = new GameObject("waypoint" + counts);
+                    counts++;
+                    t.transform.position = position;
+                    waypoints[1] = t;
+                }
+                else
+                {
+                    if (possiblePosition.Contains(right))
+                    {
+                        GameObject s = new GameObject("waypoint" + counts);
+                        counts++;
+                        s.transform.position = right;
+                        waypoints[0] = s;
+
+                        GameObject t = new GameObject("waypoint" + counts);
+                        counts++;
+                        t.transform.position = position;
+                        waypoints[1] = t;
+                    }
+                    else
+                    {
+                        waypointsCreation(position);
+                    }
+                }
+            }
+        }
+
+
         return waypoints;
     }
 
     public void clearEnemies()
     {
         for (int i = 0; i < enemies.Count; i++) {
-            Destroy(enemies[i]);
+            if (enemies[i] != null)
+            {
+                for (int j = 0; j < enemies[i].GetComponent<EnemyAI>().patrolPath.Length; j++)
+                {
+                    Destroy(enemies[i].GetComponent<EnemyAI>().patrolPath[j]);
+                }
+                Destroy(enemies[i]);
+            }
         }
         enemies.Clear();
+
+        foreach (Vector2Int position in dynammicPositionRecord) {
+            checkTable[position.x, position.y] = false;
+        }
+        dynammicPositionRecord.Clear();
     }
 
     private void checkTableFormation()
     {
-        //player position shouldn't generate and player around within prevent size shouldn't generate
-        var relativePlayerPosition = playerPosition - mapCenter + mapExtend;
-        for (int i = 0; i < playerWidth; i++)
+        checkTable = new bool[mapTilemap.size.x,mapTilemap.size.y];
+
+        foreach (var position in mapTilemap.cellBounds.allPositionsWithin)
         {
-            for (int j = 0; j < playerHeight; j++)
+            if (mapTilemap.HasTile(position) && !shopTilemap.HasTile(position))
             {
-                var actualX = (int)(relativePlayerPosition.x - playerExtend.x + i);
-                var actualY = (int)(relativePlayerPosition.y - playerExtend.y + i);
-                locationCheck[actualX, actualY] = true;
-                for (int a = -preventGenerationBlockSize; a <= preventGenerationBlockSize; a++)
+                var rightUpCorner = position + enemyExtend;
+                var leftBotCorner = position - enemyExtend;
+                var rightBotCorner = position + enemyExtend - new Vector3(0, 2 * enemyExtend.y, 0);
+                var leftUpCorner = position - enemyExtend - new Vector3(2 * enemyExtend.x, 0, 0);
+                Vector3Int rightUpCorner1 = new Vector3Int((int)rightUpCorner.x, (int)rightUpCorner.y, (int)rightUpCorner.z);
+                Vector3Int leftBotCorner1 = new Vector3Int((int)leftBotCorner.x, (int)leftBotCorner.y, (int)leftBotCorner.z);
+                Vector3Int rightBotCorner1 = new Vector3Int((int)rightBotCorner.x, (int)rightBotCorner.y, (int)rightBotCorner.z);
+                Vector3Int leftUpCorner1 = new Vector3Int((int)leftUpCorner.x, (int)leftUpCorner.y, (int)leftUpCorner.z);
+                var tablePosition = position + mapExtent - mapCenter;
+                if (mapTilemap.HasTile(rightUpCorner1) && mapTilemap.HasTile(leftBotCorner1) && mapTilemap.HasTile(rightBotCorner1) && mapTilemap.HasTile(leftUpCorner1))
                 {
-                    for (int b = -preventGenerationBlockSize; b <= preventGenerationBlockSize; b++)
+
+                    possiblePosition.Add(position);
+
+                    checkTable[(int)tablePosition.x, (int)tablePosition.y] = false;
+                }
+                else
+                {
+                    if (tablePosition.x > 0 && (int)tablePosition.y > 0)
                     {
-                        if (actualX + a < mapWidth && actualX + a >= 0 && actualY + b < mapHeight && actualY + b >= 0)
-                            locationCheck[actualX + a, actualY + b] = true;
+                        checkTable[(int)tablePosition.x, (int)tablePosition.y] = true;
                     }
                 }
             }
         }
-
-        //circle checking and enemy size checking
-        for (int i = 0; i < mapWidth; i++)
-        {
-            for (int j = 0; j < mapHeight; j++)
-            {
-                //enemy boundraies
-                var xRight = i + enemyExtend.x;
-                var xLeft = i - enemyExtend.x;
-                var yUp = j + enemyExtend.y;
-                var yDown = j - enemyExtend.y;
-                //enemy boundray case
-                if ( xRight > mapWidth || xLeft < 0 || yUp > mapHeight || yDown < 0){
-                    locationCheck[i, j] = true;
-                }
-                //circle calculation
-                var distance = distanceBetweenGivenPointInMap(mapCenter, mapExtend, i,j);
-                //circle boundray case
-                if( distance > mapExtend.x){
-                    locationCheck[i, j] = true;
-                }
-                //enemy circle boundray cases
-                var circlecheker = Mathf.Abs(mapExtend.x);
-                if (Mathf.Abs(mapExtend.x) > Mathf.Abs(mapExtend.y)) {
-                    circlecheker = Mathf.Abs(mapExtend.y);
-                }
-                if (distanceBetweenGivenPointInMap(mapCenter, mapExtend, xRight, yUp) > circlecheker ||
-                    distanceBetweenGivenPointInMap(mapCenter, mapExtend, xRight, yDown) > circlecheker ||
-                    distanceBetweenGivenPointInMap(mapCenter, mapExtend, xLeft, yUp) > circlecheker ||
-                    distanceBetweenGivenPointInMap(mapCenter, mapExtend, xLeft, yDown) > circlecheker) 
-                {
-                    locationCheck[i, j] = true;
-                }
-            }
-        }
-
     }
 
-    private float distanceBetweenGivenPointInMap(Vector3 center, Vector3 extend, float x, float y) { 
-        return Vector3.Distance(new Vector3(x, y, 0) + mapCenter - mapExtend, mapCenter);
+    private void playerAroundBlock() {
+        //player position shouldn't generate and player around within prevent size shouldn't generate
+
+        var playerLonger = playerExtend.y;
+        if (playerExtend.x > playerExtend.y)
+        {
+            playerLonger = playerExtend.y;
+        }
+
+        var enemyLonger = enemyExtend.y;
+        if (enemyExtend.x > enemyExtend.y)
+        {
+            enemyLonger = enemyExtend.y;
+        }
+        var distance = (int) playerLonger + enemyLonger + preventGenerationBlockSize;
+
+        var tablePosition3D = player.transform.position + mapExtent - mapCenter;
+
+        for (int i = 0; i < distance; i++) {
+            for (int j = 0; j < distance; j++) {
+                Vector2Int tablePosition = new Vector2Int((int)(tablePosition3D.x - distance + i), (int)(tablePosition3D.y - distance + j));
+                checkTable[tablePosition.x, tablePosition.y] = true;
+                dynammicPositionRecord.Add(tablePosition);
+            }
+        }
     }
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player")) {
+            if (enemies.Count > 0) {
+                clearEnemies();
+            }
+            else
+            {
+                if (!start) {
+                    playerAroundBlock();
+                    enemyCreation(enemyNumber);
+                }
+                start = false;
+            }
+        }
     }
 }

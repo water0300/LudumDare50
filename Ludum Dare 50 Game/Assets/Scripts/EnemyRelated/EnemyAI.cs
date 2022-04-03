@@ -145,6 +145,9 @@ public class EnemyAI : MonoBehaviour
     {
         if (health <= 0) {
             StopAllCoroutines();
+            for (int i = 0; i < patrolPath.Length; i++) {
+                Destroy(patrolPath[i]);
+            }
             Destroy(this.gameObject);
         }
     }
