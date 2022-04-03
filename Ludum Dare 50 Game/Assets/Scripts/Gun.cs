@@ -11,6 +11,12 @@ public class Gun : MonoBehaviour
     public int damage = 1;
     public float horizontal;
     public float vertical;
+    public AudioSource audio;
+
+    private void Start()
+    {
+        audio = GetComponent<AudioSource>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -18,6 +24,8 @@ public class Gun : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             Shoot();
+            audio.PlayOneShot(audio.clip);
+            Debug.Log("audio");
         }
 
     }
