@@ -5,7 +5,6 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public int health = 3;
-    public List<GameObject> enemies;
     public int damage;
 
     // Start is called before the first frame update
