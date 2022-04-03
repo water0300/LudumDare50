@@ -6,10 +6,13 @@ public class Player : MonoBehaviour
 {
     public int health = 3;
     public int damage;
+    public AudioSource audio;
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
+        audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -37,8 +40,15 @@ public class Player : MonoBehaviour
         }
     }
 
-    void OnDeath()
+    void deathAnim()
     {
+        audio.PlayOneShot(audio.clip);
+        anim.Play("Base Layer.Death");
+    }
+ 
+    private void OnDeath()
+    {
+        deathAnim();
         StopAllCoroutines();
         Destroy(this.gameObject);
     }
