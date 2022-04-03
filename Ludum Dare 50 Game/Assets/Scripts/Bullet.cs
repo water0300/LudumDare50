@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public List<GameObject> enemies;
     int damage = 1;
 
     // Start is called before the first frame update
@@ -20,13 +19,17 @@ public class Bullet : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        foreach (GameObject enemy in enemies)
+        if (collision.gameObject.CompareTag("enemy"))
         {
-            if (collision.collider.gameObject.name.Contains(enemy.name))
-            {
-                collision.collider.gameObject.GetComponent<EnemyAI>().DeductHealth(damage);
-                //Debug.Log(collision.collider.gameObject.GetComponent<Player>().health);
-            }
+            collision.gameObject.GetComponent<EnemyAI>().DeductHealth(damage);
+            StopAllCoroutines();
+            Destroy(this.gameObject);
+            //Debug.Log(collision.collider.gameObject.GetComponent<Player>().health);
+        }
+
+        if (collision.gameObject.CompareTag("blocks")){
+            StopAllCoroutines();
+            Destroy(this.gameObject);
         }
     }
 }

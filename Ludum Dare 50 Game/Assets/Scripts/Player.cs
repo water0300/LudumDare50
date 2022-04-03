@@ -27,18 +27,13 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        foreach (GameObject enemy in enemies)
+        if (collision.gameObject.CompareTag("enemy"))
         {
-            Debug.Log(enemy.name);
-            Debug.Log(collision.collider.gameObject.name);
-            if (collision.collider.gameObject.name.Contains(enemy.name))
+            health--;
+            Debug.Log(health);
+            if (health == 0)
             {
-                health--;
-                Debug.Log(health);
-                if (health == 0)
-                {
-                    OnDeath();
-                }
+                OnDeath();
             }
         }
     }

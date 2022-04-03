@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class EnemyGeneration : MonoBehaviour
 {
+
+    private int counts = 0;
+
     public GameObject enemy;
 
     public GameObject player;
@@ -18,8 +21,6 @@ public class EnemyGeneration : MonoBehaviour
     public int preventGenerationBlockSize = 1;
 
     public GameObject target;
-
-    public GameObject[] waypoints;
 
     public float[] times;
 
@@ -110,14 +111,83 @@ public class EnemyGeneration : MonoBehaviour
             temp.transform.position = new Vector3(temp.transform.position.x, temp.transform.position.y, 0f);
 
             temp.GetComponent<EnemyAI>().targetObject = target;
-            
-            temp.GetComponent<EnemyAI>().patrolPath = waypoints;
+
+            temp.GetComponent<EnemyAI>().patrolPath = waypointsCreation(randomX, randomY); ;
             
             temp.GetComponent<EnemyAI>().patrolPathIdleTimes = times;
 
 
             enemies.Add(temp);
         }
+    }
+
+    public GameObject[] waypointsCreation(int x, int y) {
+        var distance = UnityEngine.Random.Range(1, 3) * 20;
+        GameObject[] waypoints = new GameObject[2];
+        if (x + distance > mapWidth)
+        {
+            distance = -distance;
+            if (x + distance < 0)
+            {
+                if (y + distance < 0)
+                {
+                    distance = -distance;
+                    if (y + distance > mapHeight)
+                    {
+                        waypointsCreation(x, y);
+                    }
+                    else {
+                        GameObject s = new GameObject("waypoint" + counts);
+                        counts++;
+                        s.transform.position = new Vector3(x, y + distance, 0) + mapCenter - mapExtend;
+                        waypoints[0] = s;
+
+                        GameObject t = new GameObject("waypoint" + counts);
+                        counts++;
+                        t.transform.position = new Vector3(x, y, 0) + mapCenter - mapExtend;
+                        waypoints[1] = t;
+                    }
+                }
+                else {
+                    GameObject s = new GameObject("waypoint" + counts);
+                    counts++;
+                    s.transform.position = new Vector3(x, y + distance, 0) + mapCenter - mapExtend;
+                    waypoints[0] = s;
+
+                    GameObject t = new GameObject("waypoint" + counts);
+                    counts++;
+                    t.transform.position = new Vector3(x, y, 0) + mapCenter - mapExtend;
+                    waypoints[1] = t;
+                }
+            }
+            else
+            {
+                GameObject s = new GameObject("waypoint" + counts);
+                counts++;
+                s.transform.position = new Vector3(x + distance, y, 0) + mapCenter - mapExtend;
+                waypoints[0] = s;
+
+                GameObject t = new GameObject("waypoint" + counts);
+                counts++;
+                t.transform.position = new Vector3(x, y, 0) + mapCenter - mapExtend;
+                waypoints[1] = t;
+            }
+        }
+        else
+        {
+
+            GameObject s = new GameObject("waypoint" + counts);
+            counts++;
+            s.transform.position = new Vector3(x + distance, y, 0) + mapCenter - mapExtend;
+            waypoints[0] = s;
+
+            GameObject t = new GameObject("waypoint" + counts);
+            counts++;
+            t.transform.position = new Vector3(x, y, 0) + mapCenter - mapExtend;
+            waypoints[1] = t;
+
+        }
+        return waypoints;
     }
 
     public void clearEnemies()

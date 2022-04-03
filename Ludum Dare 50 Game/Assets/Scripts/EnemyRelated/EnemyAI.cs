@@ -63,11 +63,6 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (health == 0)
-        {
-            StopAllCoroutines();
-            Destroy(this.gameObject);
-        }
 
         if (targetObject == null)
         {
@@ -143,18 +138,19 @@ public class EnemyAI : MonoBehaviour
     public void DeductHealth(int dmg)
     {
         health -= dmg;
-    }
-
-    void OnTriggerEnter(Collider c)
+        checkCurrentHealth();
+    }    
+    
+    private void checkCurrentHealth()
     {
-        if (c.gameObject.CompareTag("Player") && aiState == AIState.Attack)
-        {
-            // TODO: change this to an event that tells some event manager to respawn the player at the last checkpoint
-            c.gameObject.transform.position = (new Vector3(64.5f, 0.258f, 18.659f));
-            // Need to use this to force the character controller to not override the new position.
-            Physics.SyncTransforms();
+        if (health <= 0) {
+            StopAllCoroutines();
+            Destroy(this.gameObject);
         }
     }
+
+
+
 
     // Checks if AI can see RigidBody target object within the provided distance visDistance and angle visAngle
     private bool CanSee(float visDistance, float visAngle)
