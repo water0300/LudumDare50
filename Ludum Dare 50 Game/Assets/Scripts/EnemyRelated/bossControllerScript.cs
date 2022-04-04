@@ -52,7 +52,6 @@ public class bossControllerScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-
         Shoot();
     }
     void Shoot()
