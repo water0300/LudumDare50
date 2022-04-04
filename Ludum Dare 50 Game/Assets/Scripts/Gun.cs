@@ -32,7 +32,7 @@ public class Gun : MonoBehaviour
 
     void Shoot()
     {
-        GameObject b = Instantiate(bullet, firePoint.position, firePoint.rotation);
+        GameObject b = Instantiate(bullet, firePoint.position, firePoint.rotation * bullet.transform.rotation);
         Rigidbody2D rb = b.GetComponent<Rigidbody2D>();
         rb.AddForce((firePoint.up + firePoint.right) * bulletForce, ForceMode2D.Impulse);
     }
