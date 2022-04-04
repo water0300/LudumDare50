@@ -34,13 +34,16 @@ public class EnemyAI : MonoBehaviour
     // The current patrol waypoint, starts at -1 so when setNextWaypoint is first called it will go to first waypoint
     private int currWaypoint = -1;
 
+    private float bouncesTime = 1;
+
 
     public enum AIState
     {
         Idle,
         Patrol,
         Pursue,
-        Attack
+        Attack,
+        Bounce
     }
 
     // Start is called before the first frame update
@@ -112,7 +115,6 @@ public class EnemyAI : MonoBehaviour
                 // Transition to attacking state
                 if (targetDist <= attackDistance)
                 {
-                    anim.SetBool("Attack", true);
                     aiState = AIState.Attack;
                 }
                 break;
@@ -121,18 +123,29 @@ public class EnemyAI : MonoBehaviour
                 // Transition back to pursue state if target moves out of attack range
                 if (targetDist > attackDistance)
                 {
-                    anim.SetBool("Attack", false);
                     aiState = AIState.Pursue;
+                }
+                break;            
+            case AIState.Bounce:
+                if (bouncesTime > 0)
+                {
+                    Debug.Log("time");
+                    bouncesTime -= Time.deltaTime;
+                }
+                else {
+                    bouncesTime = 1;
+                    agent.enabled = true;
+                    aiState = AIState.Pursue;
+                    rb.velocity = Vector2.zero;
                 }
                 break;
             default:
 
                 break;
-
         }
-        anim.SetFloat("forwardVel", Vector2.SqrMagnitude(rb.velocity));
 
         this.transform.position = new Vector2(this.transform.position.x, this.transform.position.y);
+
     }
 
     public void DeductHealth(int dmg)
@@ -196,5 +209,16 @@ public class EnemyAI : MonoBehaviour
         }
         agent.SetDestination(patrolPath[currWaypoint].transform.position);
         idleTime = patrolPathIdleTimes[currWaypoint];
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player")) {
+            aiState = AIState.Bounce;
+            Debug.Log("passed");
+            rb.AddForce(-agent.velocity *2, ForceMode2D.Impulse);
+            collision.gameObject.GetComponent<PlayerMovement>().bounce(agent.velocity);
+            agent.enabled = false;
+        }
     }
 }

@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private float horizontal;
     private float vertical;
 
+    public float bounceTime = -1;
     // Update is called once per frame
     void Update()
     {
@@ -29,8 +30,24 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        if (bounceTime <= 0)
+        {
+            bounceTime = -1;
+            rb.velocity = Vector2.zero;
+            rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        }
+        else
+        {
+            bounceTime -= Time.deltaTime;
+        }
     }
 
+    public void bounce(Vector3 velocity)
+    {
+
+        Debug.Log(velocity);
+        rb.AddForce(velocity * 100, ForceMode2D.Impulse);
+        bounceTime = 1;
+    }
 
 }

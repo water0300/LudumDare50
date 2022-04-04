@@ -118,6 +118,7 @@ public class EnemyGeneration : MonoBehaviour
 
             var temp = UnityEngine.Object.Instantiate(enemy, position, Quaternion.identity);
 
+            temp.transform.position = new Vector3(position.x, position.y, 0);
 
             temp.GetComponent<EnemyAI>().targetObject = target;
 

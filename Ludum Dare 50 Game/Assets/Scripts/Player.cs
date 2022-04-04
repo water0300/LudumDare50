@@ -8,11 +8,13 @@ public class Player : MonoBehaviour
     public int damage;
     public AudioSource audio;
     public Animator anim;
+    public Rigidbody2D rb;
 
     // Start is called before the first frame update
     void Start()
     {
         audio = GetComponent<AudioSource>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -31,11 +33,14 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("enemy"))
         {
-            health--;
-            Debug.Log(health);
-            if (health == 0)
+            if (this.gameObject.GetComponent<PlayerMovement>().bounceTime < 0)
             {
-                OnDeath();
+                health--;
+                Debug.Log(health);
+                if (health == 0)
+                {
+                    OnDeath();
+                }
             }
         }
     }
@@ -67,4 +72,5 @@ public class Player : MonoBehaviour
         StopAllCoroutines();
         Destroy(this.gameObject);
     }
+
 }
