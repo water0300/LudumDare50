@@ -104,10 +104,14 @@ public class EnemyGeneration : MonoBehaviour
                     var x = (int)(position.x - enemyExtend.x + j);
                     var y = (int)(position.y - enemyExtend.y + k);
                     Vector3 blockedTablePos = new Vector3(x, y, 0) + mapExtent + mapCenter;
-                    if (!checkTable[(int)blockedTablePos.x, (int)blockedTablePos.y]) {
-                        checkTable[(int)blockedTablePos.x, (int)blockedTablePos.y] = true;
+                    if ((int)blockedTablePos.x > 0 && (int)blockedTablePos.y > 0)
+                    {
+                        if (!checkTable[(int)blockedTablePos.x, (int)blockedTablePos.y])
+                        {
+                            checkTable[(int)blockedTablePos.x, (int)blockedTablePos.y] = true;
 
-                        dynammicPositionRecord.Add(new Vector2Int((int)blockedTablePos.x, (int)blockedTablePos.y));
+                            dynammicPositionRecord.Add(new Vector2Int((int)blockedTablePos.x, (int)blockedTablePos.y));
+                        }
                     }
                 }
             }
@@ -296,14 +300,15 @@ public class EnemyGeneration : MonoBehaviour
             if (enemies.Count > 0) {
                 clearEnemies();
             }
-            else
-            {
-                if (!start) {
-                    playerAroundBlock();
-                    enemyCreation(enemyNumber);
-                }
-                start = false;
-            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            playerAroundBlock();
+            enemyCreation(enemyNumber);
         }
     }
 }

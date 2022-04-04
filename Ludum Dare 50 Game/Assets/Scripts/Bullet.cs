@@ -31,5 +31,13 @@ public class Bullet : MonoBehaviour
             StopAllCoroutines();
             Destroy(this.gameObject);
         }
+
+        if (collision.gameObject.CompareTag("Boss"))
+        {
+            collision.gameObject.GetComponent<bossControllerScript>().DeductHealth(damage);
+            StopAllCoroutines();
+            Destroy(this.gameObject);
+            //Debug.Log(collision.collider.gameObject.GetComponent<Player>().health);
+        }
     }
 }

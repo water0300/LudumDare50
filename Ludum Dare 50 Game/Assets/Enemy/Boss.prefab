@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 479389893200945738}
   m_Layer: 0
   m_Name: Boss
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,11 +119,13 @@ MonoBehaviour:
   bullet: {fileID: 0}
   map: {fileID: 0}
   possiblePosition: []
+  shootTime: 2
   portalTime: 10
   player: {fileID: 0}
-  bulletForce: 100
+  bulletForce: 3
   anim: {fileID: 479389893200945734}
-  health: 100
+  deathTime: 1.5
+  health: 5
 --- !u!58 &479389893200945738
 CircleCollider2D:
   m_ObjectHideFlags: 0

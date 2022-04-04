@@ -142,11 +142,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetObject: {fileID: 0}
   aiState: 0
-  pursueDistance: 100
-  attackDistance: 20
+  pursueDistance: 75
+  attackDistance: 30
   visionAngle: 360
-  patrolSpeed: 50
-  pursueSpeed: 75
+  patrolSpeed: 25
+  pursueSpeed: 50
   patrolPath: []
   patrolPathIdleTimes: []
 --- !u!58 &8871055614007684116

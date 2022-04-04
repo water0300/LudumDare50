@@ -40,6 +40,21 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //boss bullet
+        if (collision.gameObject.CompareTag("bossBullet"))
+        {
+            health--;
+            Destroy(collision.gameObject);
+            if (health == 0)
+            {
+                OnDeath();
+            }
+        }
+    }
+
+
     void deathAnim()
     {
         audio.PlayOneShot(audio.clip);
