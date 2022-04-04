@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.32f1 (12f8b0834f07) revision 1243312'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22000) 64bit Core' Language: 'en' Physical Memory: 15734 MB
+OS: 'Windows 11  (10.0.22000) 64bit Professional' Language: 'en' Physical Memory: 16333 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
@@ -11,192 +11,116 @@ C:\Program Files\Unity\Hub\Editor\2020.3.32f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/YouQi/Game Jam/LudumDare50/Ludum Dare 50 Game
+C:/Users/Alex/Desktop/Game Jam 3/ludum/LudumDare50/Ludum Dare 50 Game
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58259
-Successfully changed project path to: C:/Users/YouQi/Game Jam/LudumDare50/Ludum Dare 50 Game
-C:/Users/YouQi/Game Jam/LudumDare50/Ludum Dare 50 Game
+61419
+Successfully changed project path to: C:/Users/Alex/Desktop/Game Jam 3/ludum/LudumDare50/Ludum Dare 50 Game
+C:/Users/Alex/Desktop/Game Jam 3/ludum/LudumDare50/Ludum Dare 50 Game
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 39.19 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 42.86 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.32f1 (12f8b0834f07)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/YouQi/Game Jam/LudumDare50/Ludum Dare 50 Game/Assets
+[Subsystems] Discovering subsystems at path C:/Users/Alex/Desktop/Game Jam 3/ludum/LudumDare50/Ludum Dare 50 Game/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2560)
+    Renderer: NVIDIA GeForce RTX 2070 SUPER (ID=0x1e84)
     Vendor:   
-    VRAM:     6023 MB
-    Driver:   30.0.15.1179
+    VRAM:     8012 MB
+    Driver:   30.0.15.1215
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56988
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56944
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001613 seconds.
+Registered in 0.001576 seconds.
 Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 50.31 ms, found 3 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 43.68 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.629 seconds
+- Completed reload, in  0.484 seconds
 Domain Reload Profiling:
-	ReloadAssembly (629ms)
-		BeginReloadAssembly (68ms)
+	ReloadAssembly (484ms)
+		BeginReloadAssembly (51ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (492ms)
-			LoadAssemblies (67ms)
+		EndReloadAssembly (375ms)
+			LoadAssemblies (50ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (162ms)
+			SetupTypeCache (120ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (27ms)
-			SetupLoadedEditorAssemblies (187ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (149ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (50ms)
-				BeforeProcessingInitializeOnLoad (16ms)
-				ProcessInitializeOnLoadAttributes (88ms)
-				ProcessInitializeOnLoadMethodAttributes (27ms)
+				RefreshPlugins (44ms)
+				BeforeProcessingInitializeOnLoad (14ms)
+				ProcessInitializeOnLoadAttributes (65ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002315 seconds.
+Registered in 0.002730 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-0000016C784859C0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C77B1DBE0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C45A3B0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C783FFC80 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C3C7010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C77F6C030 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C3DA220 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C6A69C0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C863220 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C3EF430 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C095430 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C0C4C40 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C77F73440 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C0C4C40 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C6A69C0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C863220 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C784BD8C0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C6A69C0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7DAC9030 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C6A69C0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C9F5E20 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C244010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C77F73440 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7DB0A450 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C279E20 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Cinemachine.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7BFC3830 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C279E20 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C7D4630 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7BFEE840 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C78230F90 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C289E30 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C78358C20 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7CACDC20 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D414020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C786C0420 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C86B230 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponents.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C0D6050 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C782761B0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 45.57 ms, found 3 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 43.64 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.894 seconds
+- Completed reload, in  0.936 seconds
 Domain Reload Profiling:
-	ReloadAssembly (894ms)
-		BeginReloadAssembly (110ms)
+	ReloadAssembly (937ms)
+		BeginReloadAssembly (125ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (735ms)
-			LoadAssemblies (76ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (763ms)
+			LoadAssemblies (81ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (231ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (300ms)
+			SetupTypeCache (238ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (304ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (46ms)
+				RefreshPlugins (44ms)
 				BeforeProcessingInitializeOnLoad (68ms)
-				ProcessInitializeOnLoadAttributes (166ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (168ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2372 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 105.6 MB.
-System memory in use after: 105.7 MB.
+System memory in use before: 103.1 MB.
+System memory in use after: 103.2 MB.
 
 Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 2806.
-Total: 3.003100 ms (FindLiveObjects: 0.168100 ms CreateObjectMapping: 0.067500 ms MarkObjects: 2.655100 ms  DeleteObjects: 0.111500 ms)
+Total: 3.374800 ms (FindLiveObjects: 0.192100 ms CreateObjectMapping: 0.062500 ms MarkObjects: 3.006900 ms  DeleteObjects: 0.112200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -205,1365 +129,66 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Enemy/bossFightTriger.png
-  artifactKey: Guid(5eea80fa2cd29dd4890ab2dbf6f6a3cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/bossFightTriger.png using Guid(5eea80fa2cd29dd4890ab2dbf6f6a3cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd474eb11e9e47d4f736b864db3c1ae37') in 0.093540 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.941778 seconds.
-  path: Assets/Enemy/bossFightTriger.png
-  artifactKey: Guid(5eea80fa2cd29dd4890ab2dbf6f6a3cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/bossFightTriger.png using Guid(5eea80fa2cd29dd4890ab2dbf6f6a3cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '010b8223c51e394bddc78cf0ad359c55') in 0.012195 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 122.086489 seconds.
-  path: Assets/Enemy/bossFightTriger.png
-  artifactKey: Guid(5eea80fa2cd29dd4890ab2dbf6f6a3cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/bossFightTriger.png using Guid(5eea80fa2cd29dd4890ab2dbf6f6a3cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fc08320807db23fcc287c48a749f695') in 0.047480 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 266.882267 seconds.
-  path: Assets/Enemy/BossFightTrigger.controller
-  artifactKey: Guid(0c1d5c33eba96cc4e8f819dedafcd717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/BossFightTrigger.controller using Guid(0c1d5c33eba96cc4e8f819dedafcd717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb145e9bb40e1e6cf3106dd4cc95fb0d') in 0.008438 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 38.230888 seconds.
-  path: Assets/Enemy/bossFightTrigger.anim
-  artifactKey: Guid(9834aa88a2a073c4b96d9cf833927ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/bossFightTrigger.anim using Guid(9834aa88a2a073c4b96d9cf833927ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ef162c726280ab1e69b2228fb5573a4') in 0.006321 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 34.646893 seconds.
-  path: Assets/Enemy/bossFightTriger 1.png
-  artifactKey: Guid(7b514f50980494d48b4a4e42f1823b2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/bossFightTriger 1.png using Guid(7b514f50980494d48b4a4e42f1823b2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdc22296b2a36def7dacfa22f1ffa3ea') in 0.046260 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.571147 seconds.
-  path: Assets/Enemy/BossFightTrigger.controller
-  artifactKey: Guid(0c1d5c33eba96cc4e8f819dedafcd717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/BossFightTrigger.controller using Guid(0c1d5c33eba96cc4e8f819dedafcd717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bb3e7b870e1b8db670575a0e0d7468a') in 0.002962 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 80.363528 seconds.
-  path: Assets/Enemy/bossFightTriger 1.png
-  artifactKey: Guid(b6549b72838a9ca46ac0dbdd85fb5540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/bossFightTriger 1.png using Guid(b6549b72838a9ca46ac0dbdd85fb5540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '559cabd9ecad04b7e3d5f6f3eb61120e') in 0.045725 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 20.084748 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/ENVIRONMENT/sea/sea1.png
-  artifactKey: Guid(6fce5a0dfaf4449429e73bdd45a41920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/ENVIRONMENT/sea/sea1.png using Guid(6fce5a0dfaf4449429e73bdd45a41920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42ab57548b53181519deeaadc8618ab0') in 0.020367 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/Pixel Monster Pack/32x32 monsters/slime-red.png
-  artifactKey: Guid(35a60898747d4194f896b10414831782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Monster Pack/32x32 monsters/slime-red.png using Guid(35a60898747d4194f896b10414831782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6d04e1421bb4bfc9bf1ea6e26eb0c2b') in 0.014568 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000179 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/ENVIRONMENT/sea/shore2.png
-  artifactKey: Guid(21e1004862d0248d09d75a769d66f9b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/ENVIRONMENT/sea/shore2.png using Guid(21e1004862d0248d09d75a769d66f9b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d709b69699c963209daea69c96cdd2e') in 0.016302 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000175 seconds.
-  path: Assets/Pixel Monster Pack/64x64 monsters/slime-red.png
-  artifactKey: Guid(ea2992c51326f4942a14cc6a8a85e063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Monster Pack/64x64 monsters/slime-red.png using Guid(ea2992c51326f4942a14cc6a8a85e063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3f329396d161f317b1a794e512e18c1') in 0.016735 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000145 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/ENVIRONMENT/sea/sea3.png
-  artifactKey: Guid(0a6b211fa7f564124a73161b77f6ea89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/ENVIRONMENT/sea/sea3.png using Guid(0a6b211fa7f564124a73161b77f6ea89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66b803eb200534e3ea1c788175eccda1') in 0.015958 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000160 seconds.
-  path: Assets/Pixel Monster Pack/64x64 monsters/rat-green.png
-  artifactKey: Guid(55ab31a54d1fea340a28b6c418797b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Monster Pack/64x64 monsters/rat-green.png using Guid(55ab31a54d1fea340a28b6c418797b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfb6ade8d68d056528d4674ac1e29628') in 0.014894 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000226 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb_yellow/orb-yellow2.png
-  artifactKey: Guid(110473ea83299431ea9e0240e0d25eb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb_yellow/orb-yellow2.png using Guid(110473ea83299431ea9e0240e0d25eb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9ecd1b5750aabea746230283f2fb237') in 0.022409 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000139 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb-green/orb-green10.png
-  artifactKey: Guid(0f1c6ff9d4ae844138ae44dd6668b6eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb-green/orb-green10.png using Guid(0f1c6ff9d4ae844138ae44dd6668b6eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d5f0d1199d03e17364990fab60303f0') in 0.015765 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000139 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/sprites/dungeon-door-opened.png
-  artifactKey: Guid(637edcd36711f45bab7f9891c0a27425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/sprites/dungeon-door-opened.png using Guid(637edcd36711f45bab7f9891c0a27425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e76966776a7ef637c3012639d3432fc') in 0.014149 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000189 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/sprites/door-green.png
-  artifactKey: Guid(2748b47c509074184b84ae0d1a186454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/sprites/door-green.png using Guid(2748b47c509074184b84ae0d1a186454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '763661aed66653467f12322a54dc9946') in 0.017785 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/Pixel Monster Pack/64x64 monsters/spider-black.png
-  artifactKey: Guid(d4ae1438553220b46926edcb4692f03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Monster Pack/64x64 monsters/spider-black.png using Guid(d4ae1438553220b46926edcb4692f03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95d525b6e6fa7753c604dae9512e5f8f') in 0.016270 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000144 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb-red/orb-red3.png
-  artifactKey: Guid(33d4f3e7220f34fe28973f6d1fb3baf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb-red/orb-red3.png using Guid(33d4f3e7220f34fe28973f6d1fb3baf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f510db493507ae7cad0454beed3e12e') in 0.015878 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/ENVIRONMENT/sea/shore1.png
-  artifactKey: Guid(cf2f1e4b1ea0b4468a465e02e657ebff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/ENVIRONMENT/sea/shore1.png using Guid(cf2f1e4b1ea0b4468a465e02e657ebff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '965c73b0da1add106834cb645cc75991') in 0.014749 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000190 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb-red/orb-red7.png
-  artifactKey: Guid(b7cce68ac2b0a4705a589a156022c4f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb-red/orb-red7.png using Guid(b7cce68ac2b0a4705a589a156022c4f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ab2af21a6a837bfcbcb0468a5004bbf') in 0.014837 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000127 seconds.
-  path: Assets/Pixel Monster Pack/64x64 monsters/skull-blue.png
-  artifactKey: Guid(965bd1a490538104f8b9adf54c9abd19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Monster Pack/64x64 monsters/skull-blue.png using Guid(965bd1a490538104f8b9adf54c9abd19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e0fbad75a019f066ee6c4b71af68d82') in 0.015216 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000157 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb_yellow/orb-yellow9.png
-  artifactKey: Guid(dc16d6e0b95684f15b6f314e04ef4e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb_yellow/orb-yellow9.png using Guid(dc16d6e0b95684f15b6f314e04ef4e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a20ab7a8b31f5a1cf2e875dafde9846e') in 0.013510 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000133 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb-red/orb-red8.png
-  artifactKey: Guid(6b0233d2b322344dfac6807a5e41a935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb-red/orb-red8.png using Guid(6b0233d2b322344dfac6807a5e41a935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f416e6fa33b678907246d6e1ae9e667') in 0.014595 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/ENVIRONMENT/sea/shore3.png
-  artifactKey: Guid(2d6ffd36bbd3242b49a183cea67bd712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/ENVIRONMENT/sea/shore3.png using Guid(2d6ffd36bbd3242b49a183cea67bd712) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78df7146b624174fdf68c5400838f521') in 0.014167 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000123 seconds.
-  path: Assets/Pixel Monster Pack/32x32 monsters/slime-green.png
-  artifactKey: Guid(11eac439ccf58354fb7f1b7b67737a03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Monster Pack/32x32 monsters/slime-green.png using Guid(11eac439ccf58354fb7f1b7b67737a03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb6a74f3b88408967f77f781f831b666') in 0.015536 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000141 seconds.
-  path: Assets/Pixel Monster Pack/32x32 monsters/spider-black.png
-  artifactKey: Guid(575d6ab12253e0749a7bb6a07a1260ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Monster Pack/32x32 monsters/spider-black.png using Guid(575d6ab12253e0749a7bb6a07a1260ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb268b4010d09ce4377be5b3fe19c106') in 0.012514 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000144 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/ENVIRONMENT/tilesets/dungeon-tileset.png
-  artifactKey: Guid(f15472e0666d044db9bfb88bc170ad9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/ENVIRONMENT/tilesets/dungeon-tileset.png using Guid(f15472e0666d044db9bfb88bc170ad9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eabcec2b59d15ce0ed512ad87b199c2e') in 0.016948 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000155 seconds.
-  path: Assets/Sprites/dead_sprite.png
-  artifactKey: Guid(6d35805cae7e8f14288f19f6b9729a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/dead_sprite.png using Guid(6d35805cae7e8f14288f19f6b9729a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1423437f9ea2cdd6284e1d003176ed8') in 0.027174 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000130 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb_yellow/orb-yellow7.png
-  artifactKey: Guid(1178dcf2cc62c49f1bc5f52be99cc751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb_yellow/orb-yellow7.png using Guid(1178dcf2cc62c49f1bc5f52be99cc751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fd51b1c1888e44c80132e9f93c57837') in 0.016095 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000130 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb_yellow/orb-yellow4.png
-  artifactKey: Guid(aa9716c46c0184a56ad2226071d8a75b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb_yellow/orb-yellow4.png using Guid(aa9716c46c0184a56ad2226071d8a75b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5297cb7c1c9bf0cdea52837c5cde1b17') in 0.013399 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000135 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/FX/feedback/shot-1.png
-  artifactKey: Guid(39027c564640946f98cee0c86fa9a69f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/FX/feedback/shot-1.png using Guid(39027c564640946f98cee0c86fa9a69f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c2deb09f923edb632d518921fbac540') in 0.014568 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000123 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/pickaxe.png
-  artifactKey: Guid(6906a607766924185976377b2a0f8166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/pickaxe.png using Guid(6906a607766924185976377b2a0f8166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b58f2e44b02e1cd5e264ecc226fbb94') in 0.013765 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000135 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/ENVIRONMENT/sea/sea2.png
-  artifactKey: Guid(dd564ae3b33bb46c9b5194948f9fb824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/ENVIRONMENT/sea/sea2.png using Guid(dd564ae3b33bb46c9b5194948f9fb824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c082335a1b1addbe2f368bb6a43ad57') in 0.014263 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000160 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb_yellow/orb-yellow5.png
-  artifactKey: Guid(ad21d963b3dba44c380f9073b8877ab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb_yellow/orb-yellow5.png using Guid(ad21d963b3dba44c380f9073b8877ab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd080335242b5926bff4ae927185c658') in 0.014405 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/sprites/sign.png
-  artifactKey: Guid(de86d6de76534412d8c49beed76b60f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/sprites/sign.png using Guid(de86d6de76534412d8c49beed76b60f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40ef71fba32d515b9145ccd6f28cc3f6') in 0.014281 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb-red/orb-red2.png
-  artifactKey: Guid(db9947628fb184366a9640981ca6b222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb-red/orb-red2.png using Guid(db9947628fb184366a9640981ca6b222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4028d4a8fe8b67935d44ea84aebedbd') in 0.014783 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000130 seconds.
-  path: Assets/Enemy/enemy/enemy 1.png
-  artifactKey: Guid(d90e0fc12c4cf364ca56bf70afb2eb35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/enemy/enemy 1.png using Guid(d90e0fc12c4cf364ca56bf70afb2eb35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08a2251944d4bbb348cf46836351fd70') in 0.010943 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000137 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb-green/orb-green9.png
-  artifactKey: Guid(638007722298845509efdd2bb94cbf25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb-green/orb-green9.png using Guid(638007722298845509efdd2bb94cbf25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c7847f75285f7c80478e1c32fe88dda') in 0.016312 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000143 seconds.
-  path: Assets/Pixel Monster Pack/64x64 monsters/slime-black.png
-  artifactKey: Guid(a4ec39b1a4fcbee4daa01335aec8ef31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Monster Pack/64x64 monsters/slime-black.png using Guid(a4ec39b1a4fcbee4daa01335aec8ef31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56780fee28bff9dc15fe5cf313974e11') in 0.013783 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000185 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb_yellow/orb-yellow6.png
-  artifactKey: Guid(f8db20e0bd23944d3b0eca2a041df40f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb_yellow/orb-yellow6.png using Guid(f8db20e0bd23944d3b0eca2a041df40f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b32ac6d66820ae8f321e4e49279f86df') in 0.014981 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000127 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/ENVIRONMENT/sea/sea4.png
-  artifactKey: Guid(6260eda3c748541d098d04d939426866) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/ENVIRONMENT/sea/sea4.png using Guid(6260eda3c748541d098d04d939426866) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '505dffed03597e117803ac82a9846555') in 0.013286 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000163 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/FX/feedback/shot-4.png
-  artifactKey: Guid(bdbfc477c98274c64814b3f0d5b6cedc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/FX/feedback/shot-4.png using Guid(bdbfc477c98274c64814b3f0d5b6cedc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51814fe1068c0f4065f99fba86d617b3') in 0.016892 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000131 seconds.
-  path: Assets/Pixel Monster Pack/64x64 monsters/rat-black.png
-  artifactKey: Guid(b46b12ff290649c4aa428bce9c66cfbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Monster Pack/64x64 monsters/rat-black.png using Guid(b46b12ff290649c4aa428bce9c66cfbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc883a517d6a3a0c8286b93c5e3f2079') in 0.016186 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000149 seconds.
-  path: Assets/Pixel Monster Pack/64x64 monsters/skull-violet.png
-  artifactKey: Guid(b4bd359efc2ea1e4d8398e83ff36173e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Monster Pack/64x64 monsters/skull-violet.png using Guid(b4bd359efc2ea1e4d8398e83ff36173e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c13ef0c7640ff4b3defa9fc0363d2a97') in 0.013685 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000179 seconds.
-  path: Assets/Pixel Monster Pack/64x64 monsters/slime-blue.png
-  artifactKey: Guid(d5353d44d082e9048bf757667d3cecab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Monster Pack/64x64 monsters/slime-blue.png using Guid(d5353d44d082e9048bf757667d3cecab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bd9897f115ed3b1f0d8b3870e238402') in 0.016921 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb-green/orb-green11.png
-  artifactKey: Guid(d5ca7f86c9aa245b290f63b7627c01a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb-green/orb-green11.png using Guid(d5ca7f86c9aa245b290f63b7627c01a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b024dc1d8af2fc35e80ed3723d98092') in 0.015908 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000145 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/FX/feedback/shot-2.png
-  artifactKey: Guid(c9ef8f772afb94734a56aaaab85f0f93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/FX/feedback/shot-2.png using Guid(c9ef8f772afb94734a56aaaab85f0f93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce5778a792882b59d92dcda9ac493e61') in 0.013518 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000176 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb_yellow/orb-yellow1.png
-  artifactKey: Guid(7f015e51df6b7489bbd959b2788e7c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb_yellow/orb-yellow1.png using Guid(7f015e51df6b7489bbd959b2788e7c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c840e9fa48c5900424b94aeb0a657fe3') in 0.015066 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000152 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb-red/orb-red4.png
-  artifactKey: Guid(97161c386bd77442aa3efd20d312b4bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb-red/orb-red4.png using Guid(97161c386bd77442aa3efd20d312b4bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3890c8ba09db7572d257718c178f5295') in 0.013206 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/sprites/door-red.png
-  artifactKey: Guid(5de9a771aeb5040aea57a8f3333a47dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/sprites/door-red.png using Guid(5de9a771aeb5040aea57a8f3333a47dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '283f886ea9f2a4c1e3ff6d70295f0f56') in 0.014439 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000139 seconds.
-  path: Assets/Pixel Monster Pack/64x64 monsters/skull-red.png
-  artifactKey: Guid(1d98195b762487443b91f80c6b3dce0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Monster Pack/64x64 monsters/skull-red.png using Guid(1d98195b762487443b91f80c6b3dce0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66e76768cad78005cfb85754501ffcc1') in 0.014154 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000185 seconds.
-  path: Assets/Pixel Monster Pack/32x32 monsters/slime-blue.png
-  artifactKey: Guid(1843637ea4989294aa986443dbc2734a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Monster Pack/32x32 monsters/slime-blue.png using Guid(1843637ea4989294aa986443dbc2734a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c9b2d4fb7fb204de81ae2ed0a7049d5') in 0.013722 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Pixel Monster Pack/32x32 monsters/spider-blue.png
-  artifactKey: Guid(932812732bbf750488c77d88fde217ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Monster Pack/32x32 monsters/spider-blue.png using Guid(932812732bbf750488c77d88fde217ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dc344867b0da8d46ef3519a0de9138a') in 0.014023 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000143 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/sprites/door-yellow.png
-  artifactKey: Guid(0a57b9f95a3054578891b32d0e97e520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/sprites/door-yellow.png using Guid(0a57b9f95a3054578891b32d0e97e520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92e40ade9ab54a0a9f983f3644ebddca') in 0.014101 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000155 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/sprites/door-blue.png
-  artifactKey: Guid(151032beff0704901aa06bcd5d1b8e8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/sprites/door-blue.png using Guid(151032beff0704901aa06bcd5d1b8e8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5841df835e6f8aa59147d8a5142dd594') in 0.014252 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000134 seconds.
-  path: Assets/Pixel Monster Pack/64x64 monsters/rat-brown.png
-  artifactKey: Guid(f2aeeb2642ebe5f43af54de7c94996a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Monster Pack/64x64 monsters/rat-brown.png using Guid(f2aeeb2642ebe5f43af54de7c94996a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a250b87d93af8d66df0b6b71da124198') in 0.015237 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000156 seconds.
-  path: Assets/Pixel Monster Pack/64x64 monsters/slime-green.png
-  artifactKey: Guid(105ca764c4bfc9545ba8884287aa4ed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Monster Pack/64x64 monsters/slime-green.png using Guid(105ca764c4bfc9545ba8884287aa4ed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffd2f5e31ec5a40ce5d04e62c4035251') in 0.013587 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000131 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/ENVIRONMENT/sea/shore4.png
-  artifactKey: Guid(456b74042e7054ff8b720e5d806d8aa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/ENVIRONMENT/sea/shore4.png using Guid(456b74042e7054ff8b720e5d806d8aa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f83dddecfd93556ec24999dd1686774') in 0.015314 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000146 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/FX/feedback/shot-3.png
-  artifactKey: Guid(9b5c4fed62a214d12bd5a880f3c708ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/FX/feedback/shot-3.png using Guid(9b5c4fed62a214d12bd5a880f3c708ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6f357fc54212becb841cecacd24badb') in 0.013466 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000137 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/FX/shot.png
-  artifactKey: Guid(c10da56129ffc49f8a8c11a022f95018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/FX/shot.png using Guid(c10da56129ffc49f8a8c11a022f95018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25068efb3bf258c8b5cc80fe381ee33d') in 0.014915 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000129 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb-red/orb-red6.png
-  artifactKey: Guid(3353e1d2c0fd542498d2de383029159c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb-red/orb-red6.png using Guid(3353e1d2c0fd542498d2de383029159c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb0558832421db6ee7384d402d5711b0') in 0.015513 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000205 seconds.
-  path: Assets/Pixel Monster Pack/32x32 monsters/spider-green.png
-  artifactKey: Guid(71476fb161036e84ba514a3767ea7337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Monster Pack/32x32 monsters/spider-green.png using Guid(71476fb161036e84ba514a3767ea7337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '628703672313fc8716802d6aa79abc18') in 0.013968 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000126 seconds.
-  path: Assets/Pixel Monster Pack/64x64 monsters/skull-green.png
-  artifactKey: Guid(c50502eaf434eca458b44aac45e8e65c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Monster Pack/64x64 monsters/skull-green.png using Guid(c50502eaf434eca458b44aac45e8e65c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c70396605821f330d61311c10884df52') in 0.014778 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000212 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/CHARACTERS/npc/hood/poor-kid1.png
-  artifactKey: Guid(9d96818e7b4ba4fedb4f5e03a7ffe741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/CHARACTERS/npc/hood/poor-kid1.png using Guid(9d96818e7b4ba4fedb4f5e03a7ffe741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e064f53037180e4632271a4391513a34') in 0.014601 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000144 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb-red/orb-red5.png
-  artifactKey: Guid(ab5eca790c91840b7bdb6b7f229cba7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb-red/orb-red5.png using Guid(ab5eca790c91840b7bdb6b7f229cba7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fe599d9dcf13fa41b292e46b388c66f') in 0.013986 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000190 seconds.
-  path: Assets/Enemy/enemy/enemy.png
-  artifactKey: Guid(460a20b7189e11743bce468f22fade82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/enemy/enemy.png using Guid(460a20b7189e11743bce468f22fade82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc2110f860ee7fa96898c358750967d5') in 0.009364 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/Pixel Monster Pack/64x64 monsters/spider-blue.png
-  artifactKey: Guid(8d12af816276c0e48a55b77131695a7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Monster Pack/64x64 monsters/spider-blue.png using Guid(8d12af816276c0e48a55b77131695a7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e81bd5615b3eae18809da405d44a128') in 0.013296 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000156 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb_yellow/orb-yellow3.png
-  artifactKey: Guid(84c493439196c4012a8397f0cb15e5df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb_yellow/orb-yellow3.png using Guid(84c493439196c4012a8397f0cb15e5df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43be1c37a24928b0006a77d705c62cb2') in 0.015049 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000143 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb-green/orb-green12.png
-  artifactKey: Guid(fbb2ffa6e5ef246b589e3fc85366844c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb-green/orb-green12.png using Guid(fbb2ffa6e5ef246b589e3fc85366844c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94e60ec31c44b599e87c21df344323f1') in 0.016860 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000126 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/CHARACTERS/npc/hood/poor-kid2.png
-  artifactKey: Guid(1379cbe1beb724ba596213c38e5c278b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/CHARACTERS/npc/hood/poor-kid2.png using Guid(1379cbe1beb724ba596213c38e5c278b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9405362a72b15fd3b0c3820c19ab7c3') in 0.017008 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000130 seconds.
-  path: Assets/Pixel Monster Pack/32x32 monsters/slime-black.png
-  artifactKey: Guid(98a78e783122f1d49a1d6b39ca80ec14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Monster Pack/32x32 monsters/slime-black.png using Guid(98a78e783122f1d49a1d6b39ca80ec14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcade4ea37da6c739f0166ff06d06c42') in 0.012533 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000130 seconds.
-  path: Assets/Enemy/enemy/bossFightTriger.png
-  artifactKey: Guid(daea1dd2470e08344a88c580c7370e7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/enemy/bossFightTriger.png using Guid(daea1dd2470e08344a88c580c7370e7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee8678c9028ec9c583e47853467c99d0') in 0.038946 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000155 seconds.
-  path: Assets/Pixel Monster Pack/64x64 monsters/boneworm-blue.png
-  artifactKey: Guid(6ed1e2b8ed21d1f4bb26a2be4662fb84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Monster Pack/64x64 monsters/boneworm-blue.png using Guid(6ed1e2b8ed21d1f4bb26a2be4662fb84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3bc1426c0274435ae7d4d1fb70b7470') in 0.014600 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000153 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/boots.png
-  artifactKey: Guid(5956785b2be4a41f58f2f834de40867c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/boots.png using Guid(5956785b2be4a41f58f2f834de40867c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fd5ad341e06b83eeb63643017f787d1') in 0.014943 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000133 seconds.
-  path: Assets/Pixel Monster Pack/64x64 monsters/boneworm-white.png
-  artifactKey: Guid(f6f2d4df13f509b448bc75a435836143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Monster Pack/64x64 monsters/boneworm-white.png using Guid(f6f2d4df13f509b448bc75a435836143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed6d75930a4f247acc40030d3bc3ce7d') in 0.014217 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/Pixel Monster Pack/64x64 monsters/boneworm-green.png
-  artifactKey: Guid(463e288965617e74f9ee2bf46d98d1e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Monster Pack/64x64 monsters/boneworm-green.png using Guid(463e288965617e74f9ee2bf46d98d1e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba6fa2485a7e2aa2ffc270b13f380c09') in 0.013707 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb_yellow/orb-yellow8.png
-  artifactKey: Guid(9a50d90d7150249f881fb89aa1e10c6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb_yellow/orb-yellow8.png using Guid(9a50d90d7150249f881fb89aa1e10c6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef78657f591e5528ac71f425d4614480') in 0.015671 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000156 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb-red/orb-red1.png
-  artifactKey: Guid(d30789bef8a0147a3b079c22d7954344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/OBJECTS/items/orb-red/orb-red1.png using Guid(d30789bef8a0147a3b079c22d7954344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f579de4c3d09ea709b4f5bee6783f95') in 0.013814 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 75.071507 seconds.
-  path: Assets/Enemy/BossFightTrigger.controller
-  artifactKey: Guid(0c1d5c33eba96cc4e8f819dedafcd717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/BossFightTrigger.controller using Guid(0c1d5c33eba96cc4e8f819dedafcd717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b692e562bab24801d511300ce86f4b04') in 0.002355 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 81.328299 seconds.
-  path: Assets/Enemy/BossFightTrigger.controller
-  artifactKey: Guid(0c1d5c33eba96cc4e8f819dedafcd717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/BossFightTrigger.controller using Guid(0c1d5c33eba96cc4e8f819dedafcd717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbf2eafedd5eea622006a29f2d3d2f70') in 0.002291 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 283.951836 seconds.
-  path: Assets/Enemy/bossFightTrigger.anim
-  artifactKey: Guid(9834aa88a2a073c4b96d9cf833927ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/bossFightTrigger.anim using Guid(9834aa88a2a073c4b96d9cf833927ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3abb9d92d93ef9212b8b07c073555149') in 0.004976 seconds 
+  path: Assets/微信图片_20220403203945.png
+  artifactKey: Guid(bccd0ed5cc8e0694382eb88e667ca55c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/微信图片_20220403203945.png using Guid(bccd0ed5cc8e0694382eb88e667ca55c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09bbe32c50cf89d9216b8fc83636c30b') in 0.078058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 103.126221 seconds.
+  path: Assets/Enemy/enemy_sprite.png
+  artifactKey: Guid(8e762b674621edb418631339bee67d72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enemy/enemy_sprite.png using Guid(8e762b674621edb418631339bee67d72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '026ceb81428ea6123a8e5796ce27aad1') in 0.033286 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002507 seconds.
+Registered in 0.002896 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-0000016C7C42C3F0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE0543F70 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C783FC000 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F4F1050 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F198020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F198020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F198020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C577030 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F198020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F198020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C244010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F76C020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C783FC000 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F198020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C273820 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE0E70020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C295240 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7821AE50 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE06F7030 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D912A20 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE07FCD20 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7DAC8020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AED197B20 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C77C0C040 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE07FCD20 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Cinemachine.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C781DF020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE07FCD20 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C780A9630 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AED144F00 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7CF14020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F4A2E40 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F4F1050 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7CACDDF0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C5ABC60 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C77EDC630 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C78538B20 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponents.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C783FC000 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C781DF020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.752 seconds
-Domain Reload Profiling:
-	ReloadAssembly (752ms)
-		BeginReloadAssembly (93ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (616ms)
-			LoadAssemblies (71ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (199ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (249ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (67ms)
-				ProcessInitializeOnLoadAttributes (165ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
+Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2364 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 108.4 MB.
-System memory in use after: 108.5 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2828.
-Total: 2.728100 ms (FindLiveObjects: 0.168400 ms CreateObjectMapping: 0.071300 ms MarkObjects: 2.386000 ms  DeleteObjects: 0.101600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 101.799198 seconds.
-  path: Assets/Enemy/bossFightTrigger.anim
-  artifactKey: Guid(9834aa88a2a073c4b96d9cf833927ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/bossFightTrigger.anim using Guid(9834aa88a2a073c4b96d9cf833927ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6f1357b0e012245ce56b6e8928ca96b') in 0.012463 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002046 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000016C7C42C3F0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE05464F0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C78538B20 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C783F6580 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D45D010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE088C010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C781DF020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C6A69C0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D016040 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D45D010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE0CB2030 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE066D010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C780B4CA0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C781DF020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE0E70020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE0B0A010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7DE8E440 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C6A69C0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C244010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C6A69C0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE1326DE0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7DAC8020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C780B4CA0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C6A69C0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE1326DE0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Cinemachine.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F198020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE1326DE0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7859A440 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE0A46A30 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D98E020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D016040 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C57D540 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7CACD6B0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7859A440 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C77EDC630 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7821D830 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponents.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7BCC8280 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D45D010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.741 seconds
+- Completed reload, in  0.808 seconds
 Domain Reload Profiling:
-	ReloadAssembly (741ms)
-		BeginReloadAssembly (88ms)
+	ReloadAssembly (808ms)
+		BeginReloadAssembly (98ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (611ms)
-			LoadAssemblies (69ms)
+		EndReloadAssembly (662ms)
+			LoadAssemblies (79ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (194ms)
+			SetupTypeCache (223ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (246ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (255ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (65ms)
-				ProcessInitializeOnLoadAttributes (163ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2364 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 108.5 MB.
-System memory in use after: 108.6 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2831.
-Total: 2.717800 ms (FindLiveObjects: 0.172100 ms CreateObjectMapping: 0.071200 ms MarkObjects: 2.368300 ms  DeleteObjects: 0.105300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 40.252106 seconds.
-  path: Assets/Enemy/bossFightTrigger.anim
-  artifactKey: Guid(9834aa88a2a073c4b96d9cf833927ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/bossFightTrigger.anim using Guid(9834aa88a2a073c4b96d9cf833927ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5db8084e02911414e48d08d329f7b3e9') in 0.011892 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002115 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000016C7C12C020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE05464F0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C78538B20 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C783F6580 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F76C020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C78595440 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F76C020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F5E7060 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE13B9240 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F76C020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE0CB2030 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE066D010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AED16A270 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F76C020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C1C2C60 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE1343000 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE13C58F0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C1C2C60 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7CF14020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C77C0C040 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D7B3050 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7DAC8020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C7D4440 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C77C0C040 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D7B3050 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Cinemachine.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C781DF020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D7B3050 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7821BA20 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C78623EA0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F46D030 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C77DDF010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D0BD1D0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7CACDC20 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D762040 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C77EDC630 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D762040 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponents.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE1901A80 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D7C7260 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.752 seconds
-Domain Reload Profiling:
-	ReloadAssembly (753ms)
-		BeginReloadAssembly (89ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (619ms)
-			LoadAssemblies (73ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (207ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (245ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (66ms)
-				ProcessInitializeOnLoadAttributes (160ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2364 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 108.5 MB.
-System memory in use after: 108.6 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2834.
-Total: 2.984800 ms (FindLiveObjects: 0.171600 ms CreateObjectMapping: 0.071500 ms MarkObjects: 2.633500 ms  DeleteObjects: 0.107100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 27.051260 seconds.
-  path: Assets/Enemy/bossFightTrigger.anim
-  artifactKey: Guid(9834aa88a2a073c4b96d9cf833927ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/bossFightTrigger.anim using Guid(9834aa88a2a073c4b96d9cf833927ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bd3534abc7024aec99b1943aa703292') in 0.011798 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002112 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000016C7C12C020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE05468B0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE0FBD110 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C783F6580 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7FC0D010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE014E020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE0306040 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C577030 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE13B9240 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7FC0D010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7BFAF020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F282520 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C780B4C80 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE0306040 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C77F6C030 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE14981D0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C5AF080 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C77F6C030 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C785A1670 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7864A080 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7BCB1070 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7DAC8020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C780B4C80 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C77C0C040 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE137AE30 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Cinemachine.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F7A2020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7811D010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C77DE7020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7DC5F6F0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C78230F90 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7FC0D010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7814C1B0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7CACDDF0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D2C2620 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C77F6C030 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D9CC830 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponents.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE0FBD110 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7FC0D010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.751 seconds
-Domain Reload Profiling:
-	ReloadAssembly (751ms)
-		BeginReloadAssembly (92ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (616ms)
-			LoadAssemblies (73ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (198ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (246ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (63ms)
-				ProcessInitializeOnLoadAttributes (165ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2364 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 108.5 MB.
-System memory in use after: 108.6 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2837.
-Total: 2.655300 ms (FindLiveObjects: 0.167000 ms CreateObjectMapping: 0.061500 ms MarkObjects: 2.330500 ms  DeleteObjects: 0.095500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 52.385231 seconds.
-  path: Assets/Enemy/bossFightTrigger.anim
-  artifactKey: Guid(9834aa88a2a073c4b96d9cf833927ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/bossFightTrigger.anim using Guid(9834aa88a2a073c4b96d9cf833927ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '935d125ee419cd9aacced80175e01485') in 0.012329 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001910 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000016C7C12C020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE0543F70 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE0FBD110 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7EFB1350 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7FC0D010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE07800F0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE0978030 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F5E7060 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7813DC30 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7FC0D010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE0CB2030 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE066D010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C780B4C80 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE0978030 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F5E7060 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D908020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE0472430 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F5E7060 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F260030 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7864A080 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F898020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7DAC8020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C78038E30 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C77C0C040 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7FA64010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Cinemachine.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE1812070 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7811D010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7DE8A040 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F22D680 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE0000080 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D45D010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7814C1B0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7CACD310 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7DE8A040 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F5E7060 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D9CC830 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponents.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE0FBD110 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7FC0D010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.742 seconds
-Domain Reload Profiling:
-	ReloadAssembly (742ms)
-		BeginReloadAssembly (89ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (611ms)
-			LoadAssemblies (70ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (196ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (248ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (64ms)
-				ProcessInitializeOnLoadAttributes (166ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (168ms)
 				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2364 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 108.4 MB.
-System memory in use after: 108.5 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2840.
-Total: 2.913800 ms (FindLiveObjects: 0.174800 ms CreateObjectMapping: 0.074700 ms MarkObjects: 2.554400 ms  DeleteObjects: 0.109200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 42.284831 seconds.
-  path: Assets/Enemy/enemy
-  artifactKey: Guid(5b1fddf170adcb8449d8429b9c8f2d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/enemy using Guid(5b1fddf170adcb8449d8429b9c8f2d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9766021e1969f3e3c35e153388a4bc80') in 0.005623 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.065428 seconds.
-  path: Assets/Enemy/enemy/ball_enemy.png
-  artifactKey: Guid(858346e4617241c4882846d417357029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/enemy/ball_enemy.png using Guid(858346e4617241c4882846d417357029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f16c90ae80fad60a43666e158adf3ae5') in 0.042110 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000137 seconds.
-  path: Assets/Enemy/enemy/boneworm-black.png
-  artifactKey: Guid(49e8f8cf01665cb44a14b55f29c1aca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/enemy/boneworm-black.png using Guid(49e8f8cf01665cb44a14b55f29c1aca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fb70a6596848e4847cbcbd1f19c3223') in 0.013263 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000128 seconds.
-  path: Assets/Enemy/enemy/Boss.prefab
-  artifactKey: Guid(764b85fca18c86a4dae2c52b79bbf304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/enemy/Boss.prefab using Guid(764b85fca18c86a4dae2c52b79bbf304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58a4049a07d6b4cbb87f6866f7f624fc') in 0.027554 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000152 seconds.
-  path: Assets/Enemy/enemy/boneworm-black.prefab
-  artifactKey: Guid(7386197acae7ae440a4aafb9a06cf139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/enemy/boneworm-black.prefab using Guid(7386197acae7ae440a4aafb9a06cf139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5efb70f5fcd4d63db158d73fc225543f') in 0.013448 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 24.129444 seconds.
-  path: Assets/Enemy/bossFightTrigger.prefab
-  artifactKey: Guid(be5152217095839409d02f084c063154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/bossFightTrigger.prefab using Guid(be5152217095839409d02f084c063154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54167d4d1633a2c13b8a5bac92d4c247') in 0.003806 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.717208 seconds.
-  path: Assets/Enemy/bossFightTrigger.prefab
-  artifactKey: Guid(be5152217095839409d02f084c063154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy/bossFightTrigger.prefab using Guid(be5152217095839409d02f084c063154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcb61594d8e4c5f1183366c2125cb13e') in 0.013383 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001898 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000016C7C12C020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE05464F0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE0FBD110 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D0D10B0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE218F010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C7CB030 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE218F010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7DA76DF0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7813DC30 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE218F010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE0CB2030 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE066D010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE0FBD110 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE218F010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7DA76DF0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7852E270 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D41A940 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7DA76DF0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F260030 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C77C0C040 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7BCB1070 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7DAC8020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C78038E30 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C77C0C040 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7FA64010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Cinemachine.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7FC87020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7811D010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7CA20030 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7DC5F6F0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE074B020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F804010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7814C1B0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7CACDDF0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE1A84A20 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7DA76DF0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7BB40040 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponents.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE0FBD110 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE1C7E6F0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.749 seconds
-Domain Reload Profiling:
-	ReloadAssembly (749ms)
-		BeginReloadAssembly (88ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (619ms)
-			LoadAssemblies (70ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (197ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (253ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (70ms)
-				ProcessInitializeOnLoadAttributes (165ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
 				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2364 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 108.6 MB.
-System memory in use after: 108.7 MB.
+System memory in use before: 105.9 MB.
+System memory in use after: 106.0 MB.
 
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2848.
-Total: 2.751800 ms (FindLiveObjects: 0.220000 ms CreateObjectMapping: 0.065000 ms MarkObjects: 2.368500 ms  DeleteObjects: 0.097400 ms)
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2816.
+Total: 3.447800 ms (FindLiveObjects: 0.191600 ms CreateObjectMapping: 0.059700 ms MarkObjects: 3.053500 ms  DeleteObjects: 0.142000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1572,213 +197,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 101.084392 seconds.
-  path: Assets/Animation/Idle.anim
-  artifactKey: Guid(8a677743d1949064da06e32360c5a54c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Idle.anim using Guid(8a677743d1949064da06e32360c5a54c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c42a0fa87b2ce915de8f042ef9535609') in 0.016181 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.582822 seconds.
-  path: Assets/Animation/Walk_down.anim
-  artifactKey: Guid(9e0fbed5f41b1c941bfda3e46626eea0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Walk_down.anim using Guid(9e0fbed5f41b1c941bfda3e46626eea0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd854d0a471ef840fa7588f1c6d02e2a4') in 0.005807 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.459332 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/CHARACTERS/player/hero9.png
-  artifactKey: Guid(4643618a4cdd243cfbfdc8c12a87fb21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/CHARACTERS/player/hero9.png using Guid(4643618a4cdd243cfbfdc8c12a87fb21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36fd9fb1e6ed9c464a843d5ea41cba87') in 0.037024 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000136 seconds.
-  path: Assets/Animation/Walk_left.anim
-  artifactKey: Guid(359c2721471fd2a4593ffa3e55cbf0f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Walk_left.anim using Guid(359c2721471fd2a4593ffa3e55cbf0f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22309588a050991120505939e23a27f4') in 0.005276 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.113619 seconds.
-  path: Assets/Animation/Walk_right.anim
-  artifactKey: Guid(60a2ddb08673a4145bf44e5fc8489d5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Walk_right.anim using Guid(60a2ddb08673a4145bf44e5fc8489d5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fe7cf63880bfca61ba5aa253a5d233f') in 0.005992 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.886136 seconds.
-  path: Assets/Animation/Walk_up.anim
-  artifactKey: Guid(5c9c14a754d12304096955827b989687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Walk_up.anim using Guid(5c9c14a754d12304096955827b989687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4dd8f56cff443941a67809a69ccb77c') in 0.005795 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.228004 seconds.
-  path: Assets/Sprites
-  artifactKey: Guid(3a1f723c439475d4fb0827c386322471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites using Guid(3a1f723c439475d4fb0827c386322471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c8790625f5a31d924e4dae99c4b9061') in 0.005543 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 58.878387 seconds.
-  path: Assets/Animation/hero1.controller
-  artifactKey: Guid(ca673f082ac3fa8438e24918c42ce170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/hero1.controller using Guid(ca673f082ac3fa8438e24918c42ce170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c8e779a337b9d6260e2c53875baa86a') in 0.007316 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 138.692575 seconds.
-  path: Assets/Animation/Death.anim
-  artifactKey: Guid(4b0b2f2ada4a1b140992615289427da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Death.anim using Guid(4b0b2f2ada4a1b140992615289427da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21b1198bb74b8aaa17a6e03e3280a4eb') in 0.005343 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002056 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-0000016C7C12C020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE05464F0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE0FBD110 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C1BDBE0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D7DE590 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE067F020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\PsdPlugin.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE00F0030 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F752020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D016040 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D7DE590 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE0CB2030 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F738400 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE0FBD110 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE00F0030 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C2F39B0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C577030 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D41A940 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7F752020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C785A1670 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C77C0C040 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7BCB1070 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7DAC8020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D46A360 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C77C0C040 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE03A4010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Cinemachine.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE00F0030 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7811D010 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D549020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE13B3210 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7C164050 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D016040 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7814C1B0 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7CACD310 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7DCD0C20 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7849D020 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D9CC830 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponents.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016AE0FBD110 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000016C7D7DE590 doesn't match image C:\Users\YouQi\Game Jam\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.736 seconds
-Domain Reload Profiling:
-	ReloadAssembly (737ms)
-		BeginReloadAssembly (89ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (606ms)
-			LoadAssemblies (71ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (195ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (245ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (63ms)
-				ProcessInitializeOnLoadAttributes (164ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2364 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 108.6 MB.
-System memory in use after: 108.7 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2852.
-Total: 3.157500 ms (FindLiveObjects: 0.168800 ms CreateObjectMapping: 0.090000 ms MarkObjects: 2.794400 ms  DeleteObjects: 0.103400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 84.247705 seconds.
-  path: Assets/Sound
-  artifactKey: Guid(949a7cf271e335f4bab3ea04eee498ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sound using Guid(949a7cf271e335f4bab3ea04eee498ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f627d4b6cb45791fe52bdac536da95c') in 0.007938 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.135501 seconds.
-  path: Assets/Sound/Horror Body Drop 08.wav
-  artifactKey: Guid(e07a777339b741c4ca96d7b978fabb14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sound/Horror Body Drop 08.wav using Guid(e07a777339b741c4ca96d7b978fabb14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e78ab1ce7456c24cff15602d7564257b') in 0.061989 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000134 seconds.
-  path: Assets/Sound/Science Fiction Sci-Fi Laser Short 01.wav
-  artifactKey: Guid(3126ab83e06288e4ab5581be6fd25ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sound/Science Fiction Sci-Fi Laser Short 01.wav using Guid(3126ab83e06288e4ab5581be6fd25ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b42e80a9ec136760435bea9acb5a5678') in 0.018574 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
