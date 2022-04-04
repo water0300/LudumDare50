@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject weapon;
     private float horizontal;
     private float vertical;
-
+    public Player player;
     public float bounceTime = -1;
     // Update is called once per frame
     void Update()
@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical");
 
         Shooting gun = weapon.GetComponent<Shooting>();
-
+        player = GetComponent<Player>();
         animator.SetFloat("Horizontal", gun.lookDir.x);
         animator.SetFloat("Vertical", gun.lookDir.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
@@ -42,12 +42,21 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    //assume this is when player takes damage lol
     public void bounce(Vector3 velocity)
     {
 
         Debug.Log(velocity);
         rb.AddForce(velocity * 100, ForceMode2D.Impulse);
         bounceTime = 1;
+
+        Debug.Log("taking damage");
+        player.health--;
+        player.onHitEvent?.Invoke();
+        if (player.health == 0)
+        {
+            player.OnDeath();
+        }
     }
 
 }

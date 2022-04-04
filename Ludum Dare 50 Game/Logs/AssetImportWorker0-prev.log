@@ -1,286 +1,177 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.32f1 (12f8b0834f07) revision 1243312'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19043) 64bit Core' Language: 'zh' Physical Memory: 16131 MB
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'en' Physical Memory: 16225 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-E:\UnityEditor\2020.3.32f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.32f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/LudumDare50/Ludum Dare 50 Game
+C:/Users/yuenn/UnityGames/LudumDare50/Ludum Dare 50 Game
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57502
-Successfully changed project path to: D:/LudumDare50/Ludum Dare 50 Game
-D:/LudumDare50/Ludum Dare 50 Game
+60355
+Successfully changed project path to: C:/Users/yuenn/UnityGames/LudumDare50/Ludum Dare 50 Game
+C:/Users/yuenn/UnityGames/LudumDare50/Ludum Dare 50 Game
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 89.59 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 56.11 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.32f1 (12f8b0834f07)
-[Subsystems] Discovering subsystems at path E:/UnityEditor/2020.3.32f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/LudumDare50/Ludum Dare 50 Game/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/yuenn/UnityGames/LudumDare50/Ludum Dare 50 Game/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2560)
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f11)
     Vendor:   
-    VRAM:     6023 MB
-    Driver:   30.0.15.1179
+    VRAM:     5980 MB
+    Driver:   30.0.15.1215
 Initialize mono
-Mono path[0] = 'E:/UnityEditor/2020.3.32f1/Editor/Data/Managed'
-Mono path[1] = 'E:/UnityEditor/2020.3.32f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'E:/UnityEditor/2020.3.32f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56888
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56508
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: E:/UnityEditor/2020.3.32f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002427 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002432 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 46.45 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 50.59 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.737 seconds
+- Completed reload, in  0.620 seconds
 Domain Reload Profiling:
-	ReloadAssembly (737ms)
-		BeginReloadAssembly (93ms)
+	ReloadAssembly (620ms)
+		BeginReloadAssembly (68ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (545ms)
-			LoadAssemblies (92ms)
+		EndReloadAssembly (472ms)
+			LoadAssemblies (66ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (220ms)
+			SetupTypeCache (152ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (175ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (179ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (47ms)
-				BeforeProcessingInitializeOnLoad (8ms)
+				RefreshPlugins (51ms)
+				BeforeProcessingInitializeOnLoad (12ms)
 				ProcessInitializeOnLoadAttributes (81ms)
-				ProcessInitializeOnLoadMethodAttributes (35ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002238 seconds.
+Registered in 0.004448 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-000001EE72317CE0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72CA1020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72BA9D50 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7786D060 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76E6CC30 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76E86B70 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7786D060 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76E6CC30 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76972420 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72D63230 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76E6CC30 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76E74C40 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72B2DA40 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76E74C40 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE773BCA30 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76866C40 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE773BCA30 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE766516E0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76BDFE40 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7781D890 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE766874F0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE783B2620 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76A0A010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE77F6D300 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76CE2A40 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72E49840 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72CA1020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 60.45 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 48.92 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.115 seconds
+- Completed reload, in  1.225 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1115ms)
-		BeginReloadAssembly (145ms)
+	ReloadAssembly (1225ms)
+		BeginReloadAssembly (189ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (23ms)
-		EndReloadAssembly (906ms)
-			LoadAssemblies (87ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (975ms)
+			LoadAssemblies (144ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (309ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (51ms)
-			SetupLoadedEditorAssemblies (344ms)
+			SetupTypeCache (318ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (366ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (61ms)
-				BeforeProcessingInitializeOnLoad (67ms)
-				ProcessInitializeOnLoadAttributes (197ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (2ms)
+				RefreshPlugins (49ms)
+				BeforeProcessingInitializeOnLoad (83ms)
+				ProcessInitializeOnLoadAttributes (206ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2389 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2391 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 105.5 MB.
-System memory in use after: 105.5 MB.
+System memory in use after: 105.6 MB.
 
-Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 2823.
-Total: 2.499200 ms (FindLiveObjects: 0.130100 ms CreateObjectMapping: 0.040800 ms MarkObjects: 2.175100 ms  DeleteObjects: 0.152300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/sword.prefab
-  artifactKey: Guid(07f230e332356ff478652c4e9958aabc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sword.prefab using Guid(07f230e332356ff478652c4e9958aabc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cc798ae93daac0af17d19d4c4739ef1') in 0.084724 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000223 seconds.
-  path: Assets/sword 1.prefab
-  artifactKey: Guid(f56a5215c907b1545a3bcfe4118e6e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sword 1.prefab using Guid(f56a5215c907b1545a3bcfe4118e6e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '091f453225544ed8e1ca672f38df5ca8') in 0.017278 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000189 seconds.
-  path: Assets/Welbut__.ttf
-  artifactKey: Guid(a6801b8db3f1df34bbaad7d19ba9f0c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Welbut__.ttf using Guid(a6801b8db3f1df34bbaad7d19ba9f0c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fa0f8ba7c05741407265abd0f6f9af6') in 0.039991 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000247 seconds.
-  path: Assets/playerBullet.png
-  artifactKey: Guid(81d24511b93018c4e8225417924664ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/playerBullet.png using Guid(81d24511b93018c4e8225417924664ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0df598866f3fa207e70d147aa682be98') in 0.052715 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000183 seconds.
-  path: Assets/StartBackground.png
-  artifactKey: Guid(a1579829b22005549afc1882397be393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StartBackground.png using Guid(a1579829b22005549afc1882397be393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af9988901e63b647a9a99132ee430dd9') in 0.041799 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1825.953557 seconds.
-  path: Assets/UI
-  artifactKey: Guid(676c505e9fca182499738def27eefb92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI using Guid(676c505e9fca182499738def27eefb92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc19a94ae7b8cd764cad69caa413f92f') in 0.005718 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.030295 seconds.
-  path: Assets/UI/button.png
-  artifactKey: Guid(dd025ccde5ec6c546af2e670663f89d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI/button.png using Guid(dd025ccde5ec6c546af2e670663f89d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8570510d947d06404f0a61539f324073') in 0.023654 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000173 seconds.
-  path: Assets/UI/buttonBG.png
-  artifactKey: Guid(c57709b2bcdf02848ac3d2c596c202ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI/buttonBG.png using Guid(c57709b2bcdf02848ac3d2c596c202ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ceb3f6c63691d5f48eaa5440ce66624') in 0.019897 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 31.983910 seconds.
-  path: Assets/UI/Timer.png
-  artifactKey: Guid(d854872b45803034f9253cc8424898b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI/Timer.png using Guid(d854872b45803034f9253cc8424898b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb41fe829695eb806297ea1da35a3010') in 0.014955 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.031091 seconds.
-  path: Assets/UI/Buff1.png
-  artifactKey: Guid(c46f7852272702b44841c7c184b4805e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI/Buff1.png using Guid(c46f7852272702b44841c7c184b4805e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff61def51495e340273dfddef5a8281f') in 0.015386 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000168 seconds.
-  path: Assets/UI/Card2.png
-  artifactKey: Guid(0f0e739c49ba07143a006a645a949120) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI/Card2.png using Guid(0f0e739c49ba07143a006a645a949120) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b01228c25f6c45485d84101d6c16c536') in 0.029708 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000185 seconds.
-  path: Assets/UI/Card3.png
-  artifactKey: Guid(730c5826fee2bca4b92f9d1eb64f9aeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI/Card3.png using Guid(730c5826fee2bca4b92f9d1eb64f9aeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '295b427370485a0d1e35f42c5fe45798') in 0.035116 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000142 seconds.
-  path: Assets/UI/Gold.png
-  artifactKey: Guid(29b333e06e458bb4b9d24779e6121a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI/Gold.png using Guid(29b333e06e458bb4b9d24779e6121a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e55fa172e028f3d9d3f1155796341990') in 0.022485 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000160 seconds.
-  path: Assets/UI/HeartFull.png
-  artifactKey: Guid(fc7de21c19d304640a7cb20d5fda3380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI/HeartFull.png using Guid(fc7de21c19d304640a7cb20d5fda3380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79fab2b5a436a141e98da9deaf5b0422') in 0.015141 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/UI/HeartEmpty.png
-  artifactKey: Guid(16a4f58307bf9e84d84916a1a0163276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI/HeartEmpty.png using Guid(16a4f58307bf9e84d84916a1a0163276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02c993f89b497f963c0ea6eb1737e9a8') in 0.012797 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000188 seconds.
-  path: Assets/UI/Card1.png
-  artifactKey: Guid(95f73abf9c76eac489c138b2593acf00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UI/Card1.png using Guid(95f73abf9c76eac489c138b2593acf00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdbf11e827a1848c954968d49761ff15') in 0.023856 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1267.960325 seconds.
-  path: Assets/Scenes/Start Scene.unity
-  artifactKey: Guid(7f964eeee32fffd41b873dc60da39259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Start Scene.unity using Guid(7f964eeee32fffd41b873dc60da39259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfa4ae9e856f0ba4c88d2c45cf789f07') in 0.005896 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.993071 seconds.
-  path: Assets/Scenes/Main Scene.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Main Scene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97b00ee5a09b340137ec904024746e3e') in 0.005506 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001489 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.819 seconds
-Domain Reload Profiling:
-	ReloadAssembly (819ms)
-		BeginReloadAssembly (104ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (669ms)
-			LoadAssemblies (77ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (231ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (244ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (53ms)
-				ProcessInitializeOnLoadAttributes (177ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2369 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 107.4 MB.
-System memory in use after: 107.5 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2889.
-Total: 2.766200 ms (FindLiveObjects: 0.128800 ms CreateObjectMapping: 0.039000 ms MarkObjects: 2.512300 ms  DeleteObjects: 0.085400 ms)
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 2825.
+Total: 3.443900 ms (FindLiveObjects: 0.185900 ms CreateObjectMapping: 0.100600 ms MarkObjects: 3.028300 ms  DeleteObjects: 0.127500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -294,55 +185,108 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 162.428361 seconds.
-  path: Assets/PauseMenu.cs
-  artifactKey: Guid(dde0e1f7c023b364b9c36b5b05889021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PauseMenu.cs using Guid(dde0e1f7c023b364b9c36b5b05889021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bb9f949a2caa438561d9554ae1ff2ba') in 0.020649 seconds 
+  path: Assets/Scripts/UIHandler.cs
+  artifactKey: Guid(25a5e6789ad104d479bb3f6270f7190c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/UIHandler.cs using Guid(25a5e6789ad104d479bb3f6270f7190c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08df41bb73a117051606db5c5fb05db3') in 0.037659 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001550 seconds.
+Registered in 0.003661 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-000001EE7BF48650 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE77BB4040 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7AF4A7D0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE77C8F010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72A31010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76E6CC30 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE77C8F010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72A31010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72CA3C60 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7AB64030 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72A31010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE77A0A030 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76E74040 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE77A0A030 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE79B30080 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE77867600 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76E08A30 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72695010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE769E5220 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE77867600 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76E08A30 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE783B2620 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7B607030 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ECE7B26C60 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE77404010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76B6F110 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE77BB4040 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.873 seconds
+- Completed reload, in  0.975 seconds
 Domain Reload Profiling:
-	ReloadAssembly (873ms)
-		BeginReloadAssembly (123ms)
+	ReloadAssembly (975ms)
+		BeginReloadAssembly (118ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (45ms)
-		EndReloadAssembly (687ms)
-			LoadAssemblies (95ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (801ms)
+			LoadAssemblies (102ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (256ms)
+			SetupTypeCache (264ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (239ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (300ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (47ms)
-				ProcessInitializeOnLoadAttributes (175ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
-				AfterProcessingInitializeOnLoad (2ms)
+				BeforeProcessingInitializeOnLoad (94ms)
+				ProcessInitializeOnLoadAttributes (180ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2369 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 107.4 MB.
-System memory in use after: 107.5 MB.
+Unloading 2370 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.1 MB.
+System memory in use after: 104.2 MB.
 
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2892.
-Total: 2.615500 ms (FindLiveObjects: 0.144700 ms CreateObjectMapping: 0.052100 ms MarkObjects: 2.333400 ms  DeleteObjects: 0.084800 ms)
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2828.
+Total: 3.202600 ms (FindLiveObjects: 0.167800 ms CreateObjectMapping: 0.113200 ms MarkObjects: 2.830700 ms  DeleteObjects: 0.090300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -357,134 +301,102 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001580 seconds.
+Registered in 0.003297 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-000001EE7BF47ED0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72F79040 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7AA09010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE780F6440 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE727B7B40 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76D32530 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE79FCB030 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76ED4020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7733A010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7AB64030 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE727B7B40 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A446020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7AA09010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76D32530 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7C639020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE78675E20 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76E48020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72695010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A172E40 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76D32530 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76E48020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE783B2620 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76DF4020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ECE7B37E60 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE77869600 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE79FD4640 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72F79040 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.856 seconds
+- Completed reload, in  0.969 seconds
 Domain Reload Profiling:
-	ReloadAssembly (857ms)
-		BeginReloadAssembly (97ms)
+	ReloadAssembly (969ms)
+		BeginReloadAssembly (110ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (692ms)
-			LoadAssemblies (84ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (802ms)
+			LoadAssemblies (101ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (264ms)
+			SetupTypeCache (262ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (244ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (307ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (50ms)
-				ProcessInitializeOnLoadAttributes (179ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2369 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 107.4 MB.
-System memory in use after: 107.5 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2895.
-Total: 2.751500 ms (FindLiveObjects: 0.141200 ms CreateObjectMapping: 0.042100 ms MarkObjects: 2.423400 ms  DeleteObjects: 0.132000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 94.719627 seconds.
-  path: Assets/Scripts/PauseMenu.cs
-  artifactKey: Guid(dde0e1f7c023b364b9c36b5b05889021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PauseMenu.cs using Guid(dde0e1f7c023b364b9c36b5b05889021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9c553f496bb3af7cf3dec5034b181e6') in 0.005059 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 51.680466 seconds.
-  path: Assets/Scenes/Main Scene.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Main Scene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f9a994f87525415ed0a0d1c1f179d0e') in 0.002617 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 71.184315 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/CHARACTERS/npc/Girl/1.png
-  artifactKey: Guid(4225f9c79de1146c7992166dd9451c4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/CHARACTERS/npc/Girl/1.png using Guid(4225f9c79de1146c7992166dd9451c4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '863f743756edba8435e4dd7b7f429265') in 0.077884 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000171 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/CHARACTERS/npc/dog/1.png
-  artifactKey: Guid(2e9dcb0b6a3244ad9b171c6ba5bac782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/CHARACTERS/npc/dog/1.png using Guid(2e9dcb0b6a3244ad9b171c6ba5bac782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6e42026177792aeaa56e95e7b1d1af7') in 0.018325 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.135327 seconds.
-  path: Assets/Top Down Adventure Assets/Visuals/CHARACTERS/npc/cap/1.png
-  artifactKey: Guid(8dfc93a197e8745b2805ed63f5b184d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Top Down Adventure Assets/Visuals/CHARACTERS/npc/cap/1.png using Guid(8dfc93a197e8745b2805ed63f5b184d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5346c650c4d7319059479af121e7c51') in 0.016606 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001493 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.796 seconds
-Domain Reload Profiling:
-	ReloadAssembly (796ms)
-		BeginReloadAssembly (108ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (643ms)
-			LoadAssemblies (85ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (221ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (234ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (44ms)
-				ProcessInitializeOnLoadAttributes (174ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
-				AfterProcessingInitializeOnLoad (2ms)
+				BeforeProcessingInitializeOnLoad (98ms)
+				ProcessInitializeOnLoadAttributes (181ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2369 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 107.4 MB.
-System memory in use after: 107.5 MB.
+Unloading 2370 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.1 MB.
+System memory in use after: 104.2 MB.
 
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2901.
-Total: 2.606800 ms (FindLiveObjects: 0.149200 ms CreateObjectMapping: 0.040400 ms MarkObjects: 2.316100 ms  DeleteObjects: 0.100400 ms)
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2831.
+Total: 3.194900 ms (FindLiveObjects: 0.192400 ms CreateObjectMapping: 0.097300 ms MarkObjects: 2.804700 ms  DeleteObjects: 0.100000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -499,48 +411,102 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001883 seconds.
+Registered in 0.003317 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-000001EE7BF46FD0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72F79040 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A0E61A0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE79FCB030 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A9F2020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76B71E60 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76DB2010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76ED4020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76E48020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7B5B3710 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A9F2020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7AE95060 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A0D8480 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76B71E60 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE766516E0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76D32530 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76AC3010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72695010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE79EBAE40 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A51CA20 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76AC3010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A83D170 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE727C9F60 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A5A79A0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE77425030 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE77425030 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7735EC20 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.872 seconds
+- Completed reload, in  0.984 seconds
 Domain Reload Profiling:
-	ReloadAssembly (873ms)
-		BeginReloadAssembly (92ms)
+	ReloadAssembly (984ms)
+		BeginReloadAssembly (110ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (30ms)
-		EndReloadAssembly (719ms)
-			LoadAssemblies (72ms)
+		EndReloadAssembly (814ms)
+			LoadAssemblies (100ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (250ms)
+			SetupTypeCache (270ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (252ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (314ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (44ms)
-				ProcessInitializeOnLoadAttributes (193ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
-				AfterProcessingInitializeOnLoad (1ms)
+				BeforeProcessingInitializeOnLoad (106ms)
+				ProcessInitializeOnLoadAttributes (185ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2369 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 107.4 MB.
-System memory in use after: 107.5 MB.
+Unloading 2370 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.1 MB.
+System memory in use after: 104.2 MB.
 
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2904.
-Total: 2.640700 ms (FindLiveObjects: 0.149200 ms CreateObjectMapping: 0.053300 ms MarkObjects: 2.326600 ms  DeleteObjects: 0.110500 ms)
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2834.
+Total: 3.192800 ms (FindLiveObjects: 0.189400 ms CreateObjectMapping: 0.100900 ms MarkObjects: 2.797200 ms  DeleteObjects: 0.104500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -553,180 +519,214 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 845.406672 seconds.
-  path: Assets/Scripts/Player.cs
-  artifactKey: Guid(d8ba2df5b4f8f6545ba21d3b8bbd59ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player.cs using Guid(d8ba2df5b4f8f6545ba21d3b8bbd59ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b86adf92975866d44e33d4dc3080192') in 0.010084 seconds 
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003718 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001EE7BF48A10 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72F79040 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7CC0B250 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE79FCB030 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7C06D010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A446020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7C06D010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7C06D010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76F36020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE766516E0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7C06D010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7823C020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7CC0B250 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7B569010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7C639020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76B71E60 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7B6AD010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72695010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7BEB2E30 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76B71E60 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7B6AD010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A83F5B0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7AA26EE0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A5A80E0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72DB1F90 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72DB1F90 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72F79040 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.965 seconds
+Domain Reload Profiling:
+	ReloadAssembly (966ms)
+		BeginReloadAssembly (113ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (790ms)
+			LoadAssemblies (99ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (255ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (307ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (100ms)
+				ProcessInitializeOnLoadAttributes (184ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2370 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.1 MB.
+System memory in use after: 104.2 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2837.
+Total: 3.042500 ms (FindLiveObjects: 0.172700 ms CreateObjectMapping: 0.105100 ms MarkObjects: 2.676300 ms  DeleteObjects: 0.087800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001950 seconds.
+Registered in 0.003589 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-000001EE7BF49CD0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76D341B0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76EBD630 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7259E850 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7258D020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A446020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A7AA020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7B235020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76F36020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7AB00080 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A68A050 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7AACE010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76EBD630 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7B569010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7C639020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE78675E20 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE79DB6020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72695010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76D341B0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9D99EA30 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE79DB6020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A83D170 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72E5F3F0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76F5DD60 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76995020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76995020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76D341B0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.768 seconds
+- Completed reload, in  0.975 seconds
 Domain Reload Profiling:
-	ReloadAssembly (768ms)
-		BeginReloadAssembly (89ms)
+	ReloadAssembly (975ms)
+		BeginReloadAssembly (112ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (629ms)
-			LoadAssemblies (71ms)
+		EndReloadAssembly (805ms)
+			LoadAssemblies (100ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (212ms)
+			SetupTypeCache (272ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (237ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (304ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (48ms)
-				ProcessInitializeOnLoadAttributes (175ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2369 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 107.5 MB.
-System memory in use after: 107.6 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2907.
-Total: 2.497200 ms (FindLiveObjects: 0.135100 ms CreateObjectMapping: 0.038300 ms MarkObjects: 2.218800 ms  DeleteObjects: 0.104100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 348.091017 seconds.
-  path: Assets/Scripts/MainMenu.cs
-  artifactKey: Guid(4cfaa1f1c5d31d64dba2c15f9ed00a06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MainMenu.cs using Guid(4cfaa1f1c5d31d64dba2c15f9ed00a06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ffc19517d56627919b9e080276a1331') in 0.009559 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001664 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.814 seconds
-Domain Reload Profiling:
-	ReloadAssembly (814ms)
-		BeginReloadAssembly (103ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (668ms)
-			LoadAssemblies (78ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (224ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (258ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (69ms)
-				ProcessInitializeOnLoadAttributes (175ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2369 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 107.5 MB.
-System memory in use after: 107.6 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2910.
-Total: 2.941700 ms (FindLiveObjects: 0.140200 ms CreateObjectMapping: 0.047900 ms MarkObjects: 2.602800 ms  DeleteObjects: 0.149600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 101.251870 seconds.
-  path: Assets/Scripts/PauseMenu.cs
-  artifactKey: Guid(dde0e1f7c023b364b9c36b5b05889021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PauseMenu.cs using Guid(dde0e1f7c023b364b9c36b5b05889021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e0cb7c08ebc36aab311bb79a0ab6b87') in 0.004964 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001655 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.810 seconds
-Domain Reload Profiling:
-	ReloadAssembly (810ms)
-		BeginReloadAssembly (85ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (681ms)
-			LoadAssemblies (68ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (230ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (262ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (57ms)
-				ProcessInitializeOnLoadAttributes (187ms)
+				BeforeProcessingInitializeOnLoad (98ms)
+				ProcessInitializeOnLoadAttributes (182ms)
 				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (2ms)
+				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2369 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 107.5 MB.
-System memory in use after: 107.6 MB.
+Unloading 2370 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.1 MB.
+System memory in use after: 104.1 MB.
 
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2913.
-Total: 2.765900 ms (FindLiveObjects: 0.151400 ms CreateObjectMapping: 0.060000 ms MarkObjects: 2.445900 ms  DeleteObjects: 0.107600 ms)
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2840.
+Total: 3.294200 ms (FindLiveObjects: 0.201900 ms CreateObjectMapping: 0.101600 ms MarkObjects: 2.891200 ms  DeleteObjects: 0.098800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -739,56 +739,324 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 230.913945 seconds.
-  path: Assets/Scripts/PauseMenu.cs
-  artifactKey: Guid(dde0e1f7c023b364b9c36b5b05889021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PauseMenu.cs using Guid(dde0e1f7c023b364b9c36b5b05889021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36d392817dd392c1a77b77ced2757a75') in 0.005924 seconds 
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003373 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001EE7BF48290 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ECE7B1B150 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ECE7B1B150 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE79FCB030 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7258D020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ECE7B1E2E0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A7AA020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7C06D010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76E48020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7AB00080 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7258D020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7AAB4040 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76E6F230 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ECE7B1E2E0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7C639020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9D99EA30 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE79DB6020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72695010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ECE7B1B150 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9D99EA30 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE79DB6020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A83DA80 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7C0BF010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7654C060 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72E9D040 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ECE7B1B150 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ECE7B1B150 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.959 seconds
+Domain Reload Profiling:
+	ReloadAssembly (960ms)
+		BeginReloadAssembly (106ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (796ms)
+			LoadAssemblies (91ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (260ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (301ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (94ms)
+				ProcessInitializeOnLoadAttributes (184ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2370 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.2 MB.
+System memory in use after: 104.3 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2843.
+Total: 3.062000 ms (FindLiveObjects: 0.193700 ms CreateObjectMapping: 0.098800 ms MarkObjects: 2.672400 ms  DeleteObjects: 0.096400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001727 seconds.
+Registered in 0.003831 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-000001EE7BF46FD0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7B785020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7B63BA10 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE79FCB030 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9D944060 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ECE7B1E2E0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7BF6AFD0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7C2B7010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76F36020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7AB00080 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9D944060 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A424050 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7B63BA10 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ECE7B1E2E0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7C639020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9D99EA30 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE79DB6020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72695010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7B785020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9D99EA30 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE79DB6020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A83DA80 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72695010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9E30B980 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76D32530 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76D32530 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7B785020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.787 seconds
+- Completed reload, in  1.078 seconds
 Domain Reload Profiling:
-	ReloadAssembly (788ms)
-		BeginReloadAssembly (81ms)
+	ReloadAssembly (1078ms)
+		BeginReloadAssembly (169ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (76ms)
+		EndReloadAssembly (841ms)
+			LoadAssemblies (117ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (299ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (307ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (96ms)
+				ProcessInitializeOnLoadAttributes (188ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2370 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.2 MB.
+System memory in use after: 104.3 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2846.
+Total: 2.779900 ms (FindLiveObjects: 0.163300 ms CreateObjectMapping: 0.098800 ms MarkObjects: 2.415400 ms  DeleteObjects: 0.101800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003381 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001EE7BF48290 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7B785020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7B785020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE79FCB030 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9E85E010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ECE7B1E2E0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A7AA020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7C06D010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9E35D2D0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7AB00080 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9E85E010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9DFB4F40 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76E6F230 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ECE7B1E2E0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7C639020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9D99EA30 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE79DB6020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72695010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7B785020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9D99EA30 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE79DB6020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A8364B0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72695010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9E30B070 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7BAC0D10 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7BAC0D10 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7B785020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.945 seconds
+Domain Reload Profiling:
+	ReloadAssembly (946ms)
+		BeginReloadAssembly (105ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (665ms)
-			LoadAssemblies (66ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (783ms)
+			LoadAssemblies (92ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (207ms)
+			SetupTypeCache (257ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (279ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (308ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (44ms)
-				ProcessInitializeOnLoadAttributes (215ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (1ms)
+				BeforeProcessingInitializeOnLoad (92ms)
+				ProcessInitializeOnLoadAttributes (193ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2369 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 107.5 MB.
-System memory in use after: 107.6 MB.
+Unloading 2370 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.2 MB.
+System memory in use after: 104.3 MB.
 
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2916.
-Total: 2.431800 ms (FindLiveObjects: 0.168100 ms CreateObjectMapping: 0.079500 ms MarkObjects: 2.074600 ms  DeleteObjects: 0.109100 ms)
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2849.
+Total: 3.223100 ms (FindLiveObjects: 0.209800 ms CreateObjectMapping: 0.106900 ms MarkObjects: 2.804900 ms  DeleteObjects: 0.100400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -802,55 +1070,439 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 58.083751 seconds.
-  path: Assets/Scenes/Main Scene.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Main Scene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '836962cfbe96f8aed6232a2adf62a614') in 0.005230 seconds 
+  Time since last request: 837.286236 seconds.
+  path: Assets/Scripts/Player.cs
+  artifactKey: Guid(d8ba2df5b4f8f6545ba21d3b8bbd59ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player.cs using Guid(d8ba2df5b4f8f6545ba21d3b8bbd59ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0721e56756185c1daec73fdf8b0c0950') in 0.008328 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001366 seconds.
+Registered in 0.003503 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-000001EE7BF48290 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A2A7040 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9E3DC1A0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE79FCB030 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7258D020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ECE7B1E2E0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9E83C030 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7C06D010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76F36020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7AB00080 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7258D020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE79FCB030 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9E3DC1A0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ECE7B1E2E0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7C639020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9D99EA30 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE79DB6020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72695010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A2A7040 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9D99EA30 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE79DB6020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A83DA80 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9EC99020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9E30B410 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE780F6440 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE780F6440 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A2A7040 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.798 seconds
+- Completed reload, in  0.972 seconds
 Domain Reload Profiling:
-	ReloadAssembly (799ms)
-		BeginReloadAssembly (87ms)
+	ReloadAssembly (973ms)
+		BeginReloadAssembly (105ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (812ms)
+			LoadAssemblies (91ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (278ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (305ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (93ms)
+				ProcessInitializeOnLoadAttributes (189ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2370 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.2 MB.
+System memory in use after: 104.3 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2852.
+Total: 3.407500 ms (FindLiveObjects: 0.197200 ms CreateObjectMapping: 0.110900 ms MarkObjects: 2.992100 ms  DeleteObjects: 0.106400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003832 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001EE7BF4A810 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A2A7040 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE79FD3040 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A169010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7258D020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ECE7B1E2E0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9E83C030 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7C06D010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9ECE3020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7AB00080 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7258D020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A169010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76E6F230 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ECE7B1E2E0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7C639020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9D99EA30 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE79DB6020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72695010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A2A7040 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9D99EA30 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE79DB6020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A8407D0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72695010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9F19A5F0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7AAB4040 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7AAB4040 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A2A7040 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.998 seconds
+Domain Reload Profiling:
+	ReloadAssembly (998ms)
+		BeginReloadAssembly (116ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (824ms)
+			LoadAssemblies (98ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (278ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (302ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (93ms)
+				ProcessInitializeOnLoadAttributes (184ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2370 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.1 MB.
+System memory in use after: 104.2 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2855.
+Total: 3.021500 ms (FindLiveObjects: 0.179300 ms CreateObjectMapping: 0.101400 ms MarkObjects: 2.636500 ms  DeleteObjects: 0.103500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003361 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001EE7BF47750 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A2A7040 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9ED08A70 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9E83C030 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7258D020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ECE7B1E2E0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9E83C030 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7C06D010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76F36020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9ECF3040 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7258D020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9F24F010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76F5D230 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ECE7B1E2E0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7C639020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9D99EA30 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE79DB6020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72695010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A2A7040 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9D99EA30 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE79DB6020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A83DA80 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9F644010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9F19A250 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9EF8BC60 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9EF8BC60 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A2A7040 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.953 seconds
+Domain Reload Profiling:
+	ReloadAssembly (954ms)
+		BeginReloadAssembly (106ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (790ms)
+			LoadAssemblies (93ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (272ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (295ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (92ms)
+				ProcessInitializeOnLoadAttributes (180ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2370 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.2 MB.
+System memory in use after: 104.3 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2858.
+Total: 3.280200 ms (FindLiveObjects: 0.204500 ms CreateObjectMapping: 0.097400 ms MarkObjects: 2.880400 ms  DeleteObjects: 0.096800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003739 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001EE7BF47750 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7B785020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A171020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9E83C030 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\PsdPlugin.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7258D020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ECE7B1E2E0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9E83C030 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9F644010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76E48020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7AB00080 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7258D020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9E8CFFB0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE76E6F230 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001ECE7B1E2E0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7C639020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9DFB4F40 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9D98A020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72695010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Mathematics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7CB31E40 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A68A050 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9EBA3070 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7A83DA80 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE72695010 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9F199EB0 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9E3CFA30 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponentsEditor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE9E91E640 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\NavMeshComponents.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001EE7B785020 doesn't match image C:\Users\yuenn\UnityGames\LudumDare50\Ludum Dare 50 Game\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.944 seconds
+Domain Reload Profiling:
+	ReloadAssembly (944ms)
+		BeginReloadAssembly (106ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (669ms)
-			LoadAssemblies (71ms)
+		EndReloadAssembly (782ms)
+			LoadAssemblies (93ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (225ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (257ms)
+			SetupTypeCache (263ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (302ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (55ms)
-				ProcessInitializeOnLoadAttributes (188ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (1ms)
+				BeforeProcessingInitializeOnLoad (97ms)
+				ProcessInitializeOnLoadAttributes (182ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2369 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 107.4 MB.
-System memory in use after: 107.5 MB.
+Unloading 2370 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.2 MB.
+System memory in use after: 104.3 MB.
 
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2919.
-Total: 2.538900 ms (FindLiveObjects: 0.134200 ms CreateObjectMapping: 0.052500 ms MarkObjects: 2.238500 ms  DeleteObjects: 0.108100 ms)
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2861.
+Total: 3.174500 ms (FindLiveObjects: 0.178400 ms CreateObjectMapping: 0.095200 ms MarkObjects: 2.802100 ms  DeleteObjects: 0.098300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 

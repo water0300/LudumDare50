@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 public class Player : MonoBehaviour
 {
     public int health = 3;
@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     public AudioSource audio;
     public Animator anim;
     public Rigidbody2D rb;
+    public UnityEvent onHitEvent;
 
     // Start is called before the first frame update
     void Start()
@@ -29,22 +30,24 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("enemy"))
-        {
-            if (this.gameObject.GetComponent<PlayerMovement>().bounceTime < 0)
-            {
-                health--;
-                Debug.Log(health);
-                if (health == 0)
-                {
-                    OnDeath();
-                }
-            }
-        }
-    }
+    // private void OnCollisionEnter2D(Collision2D collision)
+    // {
+    //     if (collision.gameObject.CompareTag("enemy"))
+    //     {
+    //         if (this.gameObject.GetComponent<PlayerMovement>().bounceTime != -1){
+    //             Debug.Log("taking damage");
+    //             health--;
+    //             onHitEvent?.Invoke();
+    //             Debug.Log(health);
+    //             if (health == 0)
+    //             {
+    //                 OnDeath();
+    //             }
+    //         }
+    //     }
+    // }
 
+    //this isn't going to work
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //boss bullet
@@ -60,13 +63,15 @@ public class Player : MonoBehaviour
     }
 
 
+
+
     void deathAnim()
     {
         audio.PlayOneShot(audio.clip);
         anim.Play("Base Layer.Death");
     }
  
-    private void OnDeath()
+    public void OnDeath()
     {
         deathAnim();
         StopAllCoroutines();

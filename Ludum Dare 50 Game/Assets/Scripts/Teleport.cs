@@ -5,7 +5,7 @@ using UnityEngine;
 public class Teleport : MonoBehaviour
 {
     public GameObject player;
-    public GameObject shop;
+    public GameObject targetTP;
     public Camera firstCam;
     public Camera secondCam;
     Vector3 offset = new Vector3(0, 100, 0);
@@ -16,18 +16,22 @@ public class Teleport : MonoBehaviour
         secondCam.enabled = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+  
+    void OnTriggerEnter2D(Collider2D col){
+
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
+    void OnTriggerExit2D(Collider2D other) {
+        
+    }
+    
+    private void OnTriggerStay2D(Collider2D col)
     {
+        Debug.Log("weorjo");
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("hhhh");
-            player.transform.position = shop.transform.position + offset;
+            player.transform.position = targetTP.transform.position + offset;
 
             if (firstCam.enabled)
             {
