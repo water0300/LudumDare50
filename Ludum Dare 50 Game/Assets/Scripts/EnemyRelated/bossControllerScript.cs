@@ -100,7 +100,7 @@ public class bossControllerScript : MonoBehaviour
             Rigidbody2D rb = b.GetComponent<Rigidbody2D>();
             bulletsTracker.Add(b);
 
-            rb.AddForce(dir2D.normalized * 150f, ForceMode2D.Impulse);
+            rb.AddForce(dir2D.normalized * bulletForce, ForceMode2D.Impulse);
         }
     }
 

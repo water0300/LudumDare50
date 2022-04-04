@@ -123,7 +123,7 @@ MonoBehaviour:
   shootTime: 2
   portalTime: 10
   player: {fileID: 0}
-  bulletForce: 3
+  bulletForce: 150
   anim: {fileID: 479389893200945734}
   health: 5
   bulletShootPoint: {fileID: 7127486792300020987}
