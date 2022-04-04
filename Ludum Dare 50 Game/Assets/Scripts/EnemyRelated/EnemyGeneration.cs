@@ -231,7 +231,7 @@ public class EnemyGeneration : MonoBehaviour
                 var rightUpCorner = position + enemyExtend;
                 var leftBotCorner = position - enemyExtend;
                 var rightBotCorner = position + enemyExtend - new Vector3(0, 2 * enemyExtend.y, 0);
-                var leftUpCorner = position - enemyExtend - new Vector3(2 * enemyExtend.x, 0, 0);
+                var leftUpCorner = position - enemyExtend + new Vector3(0, 2 * enemyExtend.y, 0);
                 Vector3Int rightUpCorner1 = new Vector3Int((int)rightUpCorner.x, (int)rightUpCorner.y, (int)rightUpCorner.z);
                 Vector3Int leftBotCorner1 = new Vector3Int((int)leftBotCorner.x, (int)leftBotCorner.y, (int)leftBotCorner.z);
                 Vector3Int rightBotCorner1 = new Vector3Int((int)rightBotCorner.x, (int)rightBotCorner.y, (int)rightBotCorner.z);
@@ -240,13 +240,16 @@ public class EnemyGeneration : MonoBehaviour
                 if (mapTilemap.HasTile(rightUpCorner1) && mapTilemap.HasTile(leftBotCorner1) && mapTilemap.HasTile(rightBotCorner1) && mapTilemap.HasTile(leftUpCorner1))
                 {
 
-                    possiblePosition.Add(position);
-
-                    checkTable[(int)tablePosition.x, (int)tablePosition.y] = false;
+                    
+                    if ((int)tablePosition.x > 0 && (int)tablePosition.y > 0)
+                    {
+                        possiblePosition.Add(position);
+                        checkTable[(int)tablePosition.x, (int)tablePosition.y] = false;
+                    }
                 }
                 else
                 {
-                    if (tablePosition.x > 0 && (int)tablePosition.y > 0)
+                    if ((int)tablePosition.x > 0 && (int)tablePosition.y > 0)
                     {
                         checkTable[(int)tablePosition.x, (int)tablePosition.y] = true;
                     }

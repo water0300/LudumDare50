@@ -11,6 +11,9 @@ public class bossControllerScript : MonoBehaviour
     public float portalTime = 10;
     public GameObject player;
     public float bulletForce;
+    public Animator anim;
+
+    public int health = 100;
     void Start()
     {
         var tilemap = map.GetComponent<UnityEngine.Tilemaps.Tilemap>();
@@ -21,11 +24,21 @@ public class bossControllerScript : MonoBehaviour
                 possiblePosition.Add(position);
             }
         }
+        anim = this.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        var dir = player.transform.position - this.transform.position;
+        if (dir.x > 0)
+        {
+            Debug.Log("pass");
+            anim.SetFloat("x", 1);
+        }
+        else {
+            anim.SetFloat("x", 0);
+        }
         if (portalTime > 0)
         {
             portalTime -= Time.deltaTime;
@@ -35,9 +48,13 @@ public class bossControllerScript : MonoBehaviour
             this.transform.position = possiblePosition[UnityEngine.Random.Range(0, possiblePosition.Count)];
             portalTime = 10;
         }
-        Shoot();
     }
 
+    private void FixedUpdate()
+    {
+
+        Shoot();
+    }
     void Shoot()
     {
         GameObject b = Instantiate(bullet, this.transform.position, Quaternion.identity);
