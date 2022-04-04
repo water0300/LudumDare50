@@ -30,7 +30,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 80, y: 80, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 5312739826843574715}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -124,8 +125,8 @@ MonoBehaviour:
   player: {fileID: 0}
   bulletForce: 3
   anim: {fileID: 479389893200945734}
-  deathTime: 1.5
   health: 5
+  bulletShootPoint: {fileID: 7127486792300020987}
 --- !u!58 &479389893200945738
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -142,3 +143,33 @@ CircleCollider2D:
   m_Offset: {x: -0.0522315, y: 0.06160617}
   serializedVersion: 2
   m_Radius: 0.54687756
+--- !u!1 &7127486792300020987
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5312739826843574715}
+  m_Layer: 0
+  m_Name: bulletShootPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5312739826843574715
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7127486792300020987}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.353, y: 0.024, z: 0}
+  m_LocalScale: {x: 0.0125, y: 0.0125, z: 1}
+  m_Children: []
+  m_Father: {fileID: 479389893200945732}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

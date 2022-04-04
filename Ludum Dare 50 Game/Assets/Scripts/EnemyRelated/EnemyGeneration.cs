@@ -50,6 +50,8 @@ public class EnemyGeneration : MonoBehaviour
 
     private bool start = true;
 
+    private bool dead = false;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -306,10 +308,22 @@ public class EnemyGeneration : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (!dead)
         {
-            playerAroundBlock();
-            enemyCreation(enemyNumber);
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                Debug.Log("pass");
+                playerAroundBlock();
+                enemyCreation(enemyNumber);
+            }
         }
+    }
+
+    public void destroy()
+    {
+        dead = true;
+        clearEnemies();
+        StopAllCoroutines();
+        Destroy(this.gameObject);
     }
 }

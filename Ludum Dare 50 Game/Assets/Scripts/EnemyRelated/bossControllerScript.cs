@@ -8,13 +8,15 @@ public class bossControllerScript : MonoBehaviour
     public GameObject bullet;
     public GameObject map;
     public List<Vector3> possiblePosition;
-    public float shootTime = 2;
+    public float shootTime = 0.5f;
     public float portalTime = 10;
     public GameObject player;
     public float bulletForce;
     public Animator anim;
     private List<GameObject> bulletsTracker = new List<GameObject>();
     public int health = 3;
+
+    public GameObject bulletShootPoint;
     void Start()
     {
         var tilemap = map.GetComponent<UnityEngine.Tilemaps.Tilemap>();
@@ -37,10 +39,12 @@ public class bossControllerScript : MonoBehaviour
             if (dir.x > 0)
             {
                 anim.SetFloat("x", 1);
+                this.gameObject.transform.localScale = new Vector3(-Mathf.Abs(this.gameObject.transform.localScale.x), this.gameObject.transform.localScale.y, this.gameObject.transform.localScale.z);
             }
             else
             {
                 anim.SetFloat("x", 0);
+                this.gameObject.transform.localScale = new Vector3(Mathf.Abs(this.gameObject.transform.localScale.x), this.gameObject.transform.localScale.y, this.gameObject.transform.localScale.z);
             }
 
             if (portalTime > 0)
@@ -49,7 +53,26 @@ public class bossControllerScript : MonoBehaviour
             }
             else
             {
-                this.transform.position = possiblePosition[UnityEngine.Random.Range(0, possiblePosition.Count)];
+                var portalPosition = possiblePosition[UnityEngine.Random.Range(0, possiblePosition.Count)];
+                var bossExtend = this.gameObject.GetComponent<SpriteRenderer>().bounds.extents;
+                var leftBot = portalPosition - bossExtend;
+                var rightUp = portalPosition + bossExtend;
+                var playerExtend = player.gameObject.GetComponent<SpriteRenderer>().bounds.extents;
+                var playerLeftBot = player.transform.position - playerExtend;
+                var playerRightUp = player.transform.position + playerExtend;
+                while (
+                    (playerLeftBot.x < rightUp.x && playerLeftBot.x > leftBot.x) ||
+                    (playerRightUp.x < rightUp.x && playerRightUp.x > leftBot.x) ||
+                    (playerLeftBot.y < rightUp.y && playerLeftBot.y > leftBot.y) ||
+                    (playerRightUp.y < rightUp.y && playerRightUp.y > leftBot.y)
+                    ) {
+
+                    portalPosition = possiblePosition[UnityEngine.Random.Range(0, possiblePosition.Count)];
+                    leftBot = portalPosition - bossExtend;
+                    rightUp = portalPosition + bossExtend;
+                }
+                this.transform.position = portalPosition;
+
                 portalTime = 10;
             }
             if (shootTime > 0)
@@ -59,7 +82,7 @@ public class bossControllerScript : MonoBehaviour
             else
             {
                 Shoot();
-                shootTime = 2;
+                shootTime = 1;
             }
         }
 
@@ -67,18 +90,18 @@ public class bossControllerScript : MonoBehaviour
 
     void Shoot()
     {
-        var dir = player.transform.position - this.transform.position;
-        var dir2D= new Vector2(dir.x, dir.y);
+        for (int i = -50; i <= 50; i = i + 50)
+        {
+            var dir =player.transform.position - bulletShootPoint.transform.position;
+            dir.x = dir.x + i;
+            var dir2D = new Vector2(dir.x, dir.y);
 
-        var startPosition = new Vector2(this.transform.position.x, this.transform.position.y) + this.transform.localScale.x *this.GetComponent<CircleCollider2D>().offset + this.transform.localScale.x*this.GetComponent<CircleCollider2D>().radius*dir2D.normalized;
+            GameObject b = UnityEngine.Object.Instantiate(bullet, bulletShootPoint.transform.position, Quaternion.identity);
+            Rigidbody2D rb = b.GetComponent<Rigidbody2D>();
+            bulletsTracker.Add(b);
 
-        GameObject b = UnityEngine.Object.Instantiate(bullet, startPosition, Quaternion.identity);
-        Rigidbody2D rb = b.GetComponent<Rigidbody2D>();
-        dir = player.transform.position - new Vector3(startPosition.x, startPosition.y, 0);
-        dir2D = new Vector2(dir.x, dir.y);
-        bulletsTracker.Add(b);
-
-        rb.AddForce(dir2D/5f, ForceMode2D.Impulse);
+            rb.AddForce(dir2D.normalized * 150f, ForceMode2D.Impulse);
+        }
     }
 
     public void DeductHealth(int damage) {
@@ -104,5 +127,12 @@ public class bossControllerScript : MonoBehaviour
     {
         StopAllCoroutines();
         Destroy(this.gameObject);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player")) {
+            this.transform.position = possiblePosition[UnityEngine.Random.Range(0, possiblePosition.Count)];
+        }
     }
 }

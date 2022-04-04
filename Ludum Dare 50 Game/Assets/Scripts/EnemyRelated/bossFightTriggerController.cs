@@ -22,10 +22,7 @@ public class bossFightTriggerController : MonoBehaviour
         {
             Debug.Log("detected");
             if (Input.GetKeyDown(KeyCode.E)) {
-
-                Debug.Log("pressed");
-                enemyCreator.GetComponent<EnemyGeneration>().clearEnemies();
-                Destroy(enemyCreator);
+                enemyCreator.GetComponent<EnemyGeneration>().destroy();
                 boss.SetActive(true);
 
                 StopAllCoroutines();
