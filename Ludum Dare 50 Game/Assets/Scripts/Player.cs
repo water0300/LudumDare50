@@ -41,7 +41,7 @@ public class Player : MonoBehaviour
 
 
     public void OnShopHeal(){ //event
-        if(coins > priceInc){
+        if(coins >= priceInc){
             health = Mathf.Min(health+1, 8);
             onHealEvent?.Invoke();
             coins-= priceInc;
@@ -51,7 +51,7 @@ public class Player : MonoBehaviour
     }
 
     public void OnGainTime(){
-        if(coins > priceInc){
+        if(coins >= priceInc){
             time += 5;
             onTimeEvent?.Invoke();
             coins-= priceInc;
