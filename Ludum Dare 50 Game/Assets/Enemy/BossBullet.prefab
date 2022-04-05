@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6359714864031899821}
   - component: {fileID: 6359714864031899823}
   - component: {fileID: 6182331173738555607}
+  - component: {fileID: -3093953069301074608}
   m_Layer: 0
   m_Name: BossBullet
   m_TagString: bossBullet
@@ -94,7 +95,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -121,3 +122,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-3093953069301074608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6359714864031899858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e99dce839162fa948a7b3cb80604d610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -14,8 +14,7 @@ public class bossControllerScript : MonoBehaviour
     public float bulletForce;
     public Animator anim;
     private List<GameObject> bulletsTracker = new List<GameObject>();
-    public int health = 3;
-
+    public int health = 3; 
     public GameObject bulletShootPoint;
     void Start()
     {
@@ -28,6 +27,8 @@ public class bossControllerScript : MonoBehaviour
             }
         }
         anim = this.GetComponent<Animator>();
+
+        player.GetComponent<Player>().onBossSpawn?.Invoke();
     }
 
     // Update is called once per frame
@@ -126,6 +127,7 @@ public class bossControllerScript : MonoBehaviour
     public void Dead()
     {
         StopAllCoroutines();
+        player.GetComponent<Player>().onWin?.Invoke();
         Destroy(this.gameObject);
     }
 

@@ -10,6 +10,8 @@ public class UIHandler : MonoBehaviour
     public GameObject lossUI;
     public GameObject winUI;
     public GameObject shopUI;
+    public Text hourglass;
+    public Text health;
     public Text timerText;
     public Text coinText;
     public int time;
@@ -28,11 +30,11 @@ public class UIHandler : MonoBehaviour
     }
 
     public void OnShopEnter(){
-        shopUI.SetActive(true);
+        if(shopUI != null) shopUI.SetActive(true);
     }
 
     public void OnShopExit(){
-        shopUI.SetActive(false);
+        if(shopUI != null) shopUI.SetActive(false);
     }
 
     public void OnCoinAdjustment(){
@@ -52,9 +54,17 @@ public class UIHandler : MonoBehaviour
         }
     }
 
+    public void OnPriceUpdate(){
+        hourglass.text = $"Hourglass:\nGain 5 Seconds\nCurrent Price: {player.priceInc}";
+        health.text = $"Health:\nGain 1 Heart\nCurrent Price: {player.priceInc}";
+    }
     public void OnTimeIncrease(){
         timerText.text = $"{player.time}";
 
+    }
+
+    public void OnBossSpawn(){
+        Destroy(shopUI);
     }
 
     // Update is called once per frame

@@ -17,7 +17,8 @@ public class Player : MonoBehaviour
     public UnityEvent onTimeEvent;
     public UnityEvent onLoss;
     public UnityEvent onWin;
-
+    public UnityEvent onPriceUpdate;
+    public UnityEvent onBossSpawn;
     public int priceInc = 5;
     public int time {get; set; } = 60;
 
@@ -46,7 +47,9 @@ public class Player : MonoBehaviour
             onHealEvent?.Invoke();
             coins-= priceInc;
             coinEvent?.Invoke();
+            
             priceInc+=5;
+            onPriceUpdate?.Invoke();
         }
     }
 
@@ -57,24 +60,24 @@ public class Player : MonoBehaviour
             coins-= priceInc;
             coinEvent?.Invoke();
             priceInc+=5;
+            onPriceUpdate?.Invoke();
         }
     }
-    // private void OnCollisionEnter2D(Collision2D collision)
-    // {
-    //     if (collision.gameObject.CompareTag("enemy"))
-    //     {
-    //         if (this.gameObject.GetComponent<PlayerMovement>().bounceTime != -1){
-    //             Debug.Log("taking damage");
-    //             health--;
-    //             onHitEvent?.Invoke();
-    //             Debug.Log(health);
-    //             if (health == 0)
-    //             {
-    //                 OnDeath();
-    //             }
-    //         }
-    //     }
-    // }
+    public void OnDamage()
+    {
+       
+           
+        Debug.Log("taking damage");
+        health--;
+        onHitEvent?.Invoke();
+        Debug.Log(health);
+        if (health == 0)
+        {
+            OnDeath();
+        }
+            
+        
+    }
 
 
 
