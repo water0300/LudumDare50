@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class UIHandler : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public int StartTime = 30;
-    public Text timerText {get; set; }
+    public GameObject lossUI;
+    public GameObject shopUI;
+    public Text timerText;
+    public Text coinText;
     public int time;
     public Player player {get; set; }
 
@@ -16,15 +18,25 @@ public class UIHandler : MonoBehaviour
 
     int currHealthIndex = 3;
     void Start(){
-        timerText = GetComponentInChildren<Text>();
         player = FindObjectOfType<Player>();
-        time = StartTime;
-        timerText.text = $"{StartTime}";
+        time = player.startTime;
+        timerText.text = $"{player.time}";
+        coinText.text = $"{player.coins}";
         currHealthIndex = player.health-1;
         StartCoroutine(timer());
     }
 
+    public void OnShopEnter(){
+        shopUI.SetActive(true);
+    }
 
+    public void OnShopExit(){
+        shopUI.SetActive(false);
+    }
+
+    public void OnCoinAdjustment(){
+        coinText.text = $"{player.coins}";
+    }
 
     public void OnHealthLoss(){
         Debug.Log("health loss UI");
@@ -32,12 +44,39 @@ public class UIHandler : MonoBehaviour
         currHealthIndex = player.health-1;
     }
 
+    public void OnHeal(){
+        if(currHealthIndex+1 != inOrderHealth.Count){
+            inOrderHealth[currHealthIndex+1].SetActive(true);
+            currHealthIndex = player.health-1;
+        }
+    }
+
+    public void OnTimeIncrease(){
+        timerText.text = $"{player.time}";
+
+    }
+
     // Update is called once per frame
     IEnumerator timer(){
         while(true){
-            time--;
-            timerText.text = $"{time}";
+            if(player.time == 0){
+                EndGame();
+            }
+            player.time--;
+            timerText.text = $"{player.time}";
             yield return new WaitForSeconds(1);
         }
+    }
+
+    public void EndGame(){
+        lossUI.SetActive(true);
+    }
+
+    public void Restart(){
+        SceneManager.LoadScene(1);
+    }
+
+    public void Quit(){
+        Application.Quit();
     }
 }

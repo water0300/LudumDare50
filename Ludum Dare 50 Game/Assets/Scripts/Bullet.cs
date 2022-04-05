@@ -9,7 +9,6 @@ public class Bullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
     }
 
     // Update is called once per frame
@@ -21,21 +20,20 @@ public class Bullet : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("enemy"))
         {
+            Debug.Log("asdf");
             collision.gameObject.GetComponent<EnemyAI>().DeductHealth(damage);
-            StopAllCoroutines();
+
             Destroy(this.gameObject);
             //Debug.Log(collision.collider.gameObject.GetComponent<Player>().health);
         }
 
         if (collision.gameObject.CompareTag("blocks")){
-            StopAllCoroutines();
             Destroy(this.gameObject);
         }
 
         if (collision.gameObject.CompareTag("Boss"))
         {
             collision.gameObject.GetComponent<bossControllerScript>().DeductHealth(damage);
-            StopAllCoroutines();
             Destroy(this.gameObject);
             //Debug.Log(collision.collider.gameObject.GetComponent<Player>().health);
         }

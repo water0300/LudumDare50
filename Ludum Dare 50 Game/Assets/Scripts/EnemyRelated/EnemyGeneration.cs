@@ -299,11 +299,11 @@ public class EnemyGeneration : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player")) {
-            if (enemies.Count > 0) {
-                clearEnemies();
-            }
-        }
+        // if (collision.gameObject.CompareTag("Player")) {
+        //     if (enemies.Count > 0) {
+        //         clearEnemies();
+        //     }
+        // }
     }
 
     private void OnTriggerExit2D(Collider2D collision)

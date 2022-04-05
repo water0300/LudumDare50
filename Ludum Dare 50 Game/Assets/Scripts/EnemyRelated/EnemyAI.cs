@@ -5,6 +5,8 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
+    public Player player;
+
     public GameObject targetObject;
     public AIState aiState = AIState.Idle;
     // If target seen within pursueDistance, AI will start to pursue the target.
@@ -52,6 +54,7 @@ public class EnemyAI : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
         rb = gameObject.GetComponent<Rigidbody2D>();
+        player = FindObjectOfType<Player>();
         // Creates a layermask that ignores the player and enemies.
         visMask = ~LayerMask.GetMask("Player", "Enemy");
         this.transform.position = new Vector2(this.transform.position.x, this.transform.position.y);
@@ -71,8 +74,8 @@ public class EnemyAI : MonoBehaviour
         {
             Debug.Log("GG");
             StopAllCoroutines();
-            UnityEditor.EditorApplication.isPlaying = false;
-            Application.Quit(0);
+            // UnityEditor.EditorApplication.isPlaying = false;
+            // Application.Quit(0);
         }
 
         float targetDist = Mathf.Abs(Vector2.SqrMagnitude(new Vector2(targetObject.transform.position.x, targetObject.transform.position.y) - rb.position));
@@ -157,6 +160,9 @@ public class EnemyAI : MonoBehaviour
     private void checkCurrentHealth()
     {
         if (health <= 0) {
+            Debug.Log("dead guy");
+            player.coins++;
+            player.coinEvent?.Invoke();
             StopAllCoroutines();
             for (int i = 0; i < patrolPath.Length; i++) {
                 Destroy(patrolPath[i]);

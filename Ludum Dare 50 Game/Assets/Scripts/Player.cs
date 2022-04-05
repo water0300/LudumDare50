@@ -5,17 +5,27 @@ using UnityEngine.Events;
 public class Player : MonoBehaviour
 {
     public int health = 3;
+    public int startTime = 30;
+    public int coins = 0;
     public int damage;
     public AudioSource audio;
     public Animator anim;
     public Rigidbody2D rb;
     public UnityEvent onHitEvent;
+    public UnityEvent onHealEvent;
+    public UnityEvent coinEvent;
+    public UnityEvent onTimeEvent;
+    public UnityEvent onLoss;
+
+    public int priceInc = 5;
+    public int time {get; set; } = 999;
 
     // Start is called before the first frame update
     void Start()
     {
         audio = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
+        time = startTime;
     }
 
     // Update is called once per frame
@@ -24,12 +34,30 @@ public class Player : MonoBehaviour
         if (this.gameObject == null)
         {
             Debug.Log("Game over");
-            StopAllCoroutines();
-            UnityEditor.EditorApplication.isPlaying = false;
-            Application.Quit(0);
+            StopAllCoroutines();   
         }
     }
 
+
+    public void OnShopHeal(){ //event
+        if(coins > priceInc){
+            health = Mathf.Min(health+1, 8);
+            onHealEvent?.Invoke();
+            coins-= priceInc;
+            coinEvent?.Invoke();
+            priceInc+=5;
+        }
+    }
+
+    public void OnGainTime(){
+        if(coins > priceInc){
+            time += 5;
+            onTimeEvent?.Invoke();
+            coins-= priceInc;
+            coinEvent?.Invoke();
+            priceInc+=5;
+        }
+    }
     // private void OnCollisionEnter2D(Collision2D collision)
     // {
     //     if (collision.gameObject.CompareTag("enemy"))
@@ -58,6 +86,7 @@ public class Player : MonoBehaviour
             if (health == 0)
             {
                 OnDeath();
+
             }
         }
     }
@@ -75,6 +104,7 @@ public class Player : MonoBehaviour
     {
         deathAnim();
         StopAllCoroutines();
+        onLoss?.Invoke();
         Destroy(this.gameObject);
     }
 

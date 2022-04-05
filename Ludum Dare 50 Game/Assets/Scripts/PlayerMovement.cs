@@ -20,11 +20,12 @@ public class PlayerMovement : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+        movement.Normalize();
 
         Shooting gun = weapon.GetComponent<Shooting>();
         player = GetComponent<Player>();
-        animator.SetFloat("Horizontal", gun.lookDir.x);
-        animator.SetFloat("Vertical", gun.lookDir.y);
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
     }
 
