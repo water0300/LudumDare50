@@ -76,22 +76,6 @@ public class Player : MonoBehaviour
     //     }
     // }
 
-    //this isn't going to work
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        //boss bullet
-        if (collision.gameObject.CompareTag("bossBullet"))
-        {
-            health--;
-            Destroy(collision.gameObject);
-            if (health == 0)
-            {
-                OnDeath();
-
-            }
-        }
-    }
-
 
 
 

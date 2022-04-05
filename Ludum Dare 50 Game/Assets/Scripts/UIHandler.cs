@@ -61,6 +61,7 @@ public class UIHandler : MonoBehaviour
     IEnumerator timer(){
         while(true){
             if(player.time == 0){
+                Destroy(player.gameObject);
                 EndGame();
             }
             player.time--;
