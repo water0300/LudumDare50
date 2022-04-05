@@ -8,6 +8,7 @@ public class UIHandler : MonoBehaviour
     // Start is called before the first frame update
 
     public GameObject lossUI;
+    public GameObject winUI;
     public GameObject shopUI;
     public Text timerText;
     public Text coinText;
@@ -70,6 +71,10 @@ public class UIHandler : MonoBehaviour
 
     public void EndGame(){
         lossUI.SetActive(true);
+    }
+
+    public void WinGame(){
+        winUI.SetActive(true);
     }
 
     public void Restart(){
