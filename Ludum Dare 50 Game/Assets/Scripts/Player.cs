@@ -5,7 +5,7 @@ using UnityEngine.Events;
 public class Player : MonoBehaviour
 {
     public int health = 3;
-    public int startTime = 30;
+    public int startTime = 60;
     public int coins = 0;
     public int damage;
     public AudioSource audio;
@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
     public UnityEvent onWin;
 
     public int priceInc = 5;
-    public int time {get; set; } = 999;
+    public int time {get; set; } = 60;
 
     // Start is called before the first frame update
     void Start()

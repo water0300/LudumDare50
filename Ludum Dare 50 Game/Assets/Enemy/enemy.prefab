@@ -140,6 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be2f90fb8bd82cd41b80135e6f93d633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   targetObject: {fileID: 0}
   aiState: 0
   pursueDistance: 75
@@ -164,7 +165,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.0015744924, y: 0.031080235}
   serializedVersion: 2
-  m_Radius: 0.13198882
+  m_Radius: 0.31
 --- !u!50 &-92217544632726890
 Rigidbody2D:
   serializedVersion: 4
