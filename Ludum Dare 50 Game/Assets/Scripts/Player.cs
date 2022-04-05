@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     public UnityEvent coinEvent;
     public UnityEvent onTimeEvent;
     public UnityEvent onLoss;
+    public UnityEvent onWin;
 
     public int priceInc = 5;
     public int time {get; set; } = 999;
