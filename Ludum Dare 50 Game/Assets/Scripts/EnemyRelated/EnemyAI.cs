@@ -23,7 +23,7 @@ public class EnemyAI : MonoBehaviour
     public GameObject[] patrolPath;
     // Time that AI should idle at each waypoint once reached
     public float[] patrolPathIdleTimes;
-    private int health = 2;
+    private int health = 1;
 
     private NavMeshAgent agent;
     private Animator anim;

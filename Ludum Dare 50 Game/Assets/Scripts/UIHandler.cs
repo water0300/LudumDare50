@@ -62,7 +62,9 @@ public class UIHandler : MonoBehaviour
         while(true){
             if(player.time == 0){
                 Destroy(player.gameObject);
-                EndGame();
+                EndGame("You ran out of time");
+                break;
+
             }
             player.time--;
             timerText.text = $"{player.time}";
@@ -70,8 +72,9 @@ public class UIHandler : MonoBehaviour
         }
     }
 
-    public void EndGame(){
+    public void EndGame(string losstext){
         lossUI.SetActive(true);
+        lossUI.GetComponentInChildren<Text>().text = losstext;
     }
 
     public void WinGame(){
